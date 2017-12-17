@@ -17,7 +17,7 @@ public var RInstruction : GameObject;
 public var test : GameObject;
 
 private var winningScore : int = 5;
-private var defaultPlayer : String = "Pooper"; //A B C Cog, SpinningArms, Solar
+private var defaultPlayer : String = "Razorback"; //A B C Cog, SpinningArms, Solar
 private var AdvertController : AdvertController;
 private var LevelsController : LevelsController; 
 
@@ -92,7 +92,7 @@ function LoadPlayer(dummyObjName, playerNum){
 		
 		//--for debug - if we load this scene without the player selection
 		if(playerNum == 1){
-			playerToLoad = "Player1Pooper";
+			playerToLoad = "Player1Razorback";
 		}
 	}
 	
