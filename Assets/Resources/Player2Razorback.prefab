@@ -32,7 +32,7 @@ GameObject:
   - component: {fileID: 54389376623925340}
   - component: {fileID: 114974015950908912}
   - component: {fileID: 114618286121714848}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Player2Razorback
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 33093240827070296}
   - component: {fileID: 23630637770002592}
   - component: {fileID: 64025763401368454}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: cog 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,8 +69,7 @@ GameObject:
   - component: {fileID: 135225377897016402}
   - component: {fileID: 23040958211589012}
   - component: {fileID: 95346225389745182}
-  - component: {fileID: 114611942341733788}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: Shield
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -87,7 +86,7 @@ GameObject:
   - component: {fileID: 4289853954387874}
   - component: {fileID: 33028565024780944}
   - component: {fileID: 23172136071907570}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +103,7 @@ GameObject:
   - component: {fileID: 4604967093843628}
   - component: {fileID: 114170058941253914}
   - component: {fileID: 114962878922623600}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: PlayerSeeker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,12 +118,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4400565232991546}
-  - component: {fileID: 33307809833785616}
-  - component: {fileID: 23112893567430454}
   - component: {fileID: 64186726617314470}
   - component: {fileID: 54012106985855906}
   - component: {fileID: 114333786508857274}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Collider
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -141,7 +138,7 @@ GameObject:
   - component: {fileID: 4569153843727732}
   - component: {fileID: 114662440832727038}
   - component: {fileID: 114023566232135424}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: CogWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,40 +276,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!23 &23112893567430454
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1797901871353256}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!23 &23172136071907570
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -395,13 +358,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1429480862363686}
   m_Mesh: {fileID: 4300000, guid: fa457bcc02a4248739c5ec6df8bf62cc, type: 3}
---- !u!33 &33307809833785616
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1797901871353256}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &33436344531281926
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -653,19 +609,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shieldObj: {fileID: 1478351448372084}
   shieldActive: 0
---- !u!114 &114611942341733788
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1478351448372084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1c0d642d6c742afb82a2a33d52d2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceAmtInitial: 110
-  Spark: {fileID: 1000012417029784, guid: e38a1b71a399a4742967d148b4d6ed66, type: 2}
 --- !u!114 &114618286121714848
 MonoBehaviour:
   m_ObjectHideFlags: 1

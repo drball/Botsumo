@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 470554}
   - component: {fileID: 3384144}
   - component: {fileID: 2324126}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: shooter robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 439008}
   - component: {fileID: 3353292}
   - component: {fileID: 2347044}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: BulletEmitter2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 456448}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: shooter robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 484980}
   - component: {fileID: 3311814}
   - component: {fileID: 2372958}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: coloured bit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 114000011613682112}
   - component: {fileID: 114000012854742560}
   - component: {fileID: 114606156589184392}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Player2B
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 419990}
   - component: {fileID: 3367148}
   - component: {fileID: 2350704}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: BulletEmitter1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -442,8 +442,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityActive: 0
   abilityCountDown: 5
-  movingHead: {fileID: 0}
-  target: {fileID: 0}
 --- !u!114 &11463392
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -485,8 +483,7 @@ GameObject:
   - component: {fileID: 135000014156131136}
   - component: {fileID: 23000010465753080}
   - component: {fileID: 95000012401039414}
-  - component: {fileID: 114831021470162340}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: Shield
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -503,7 +500,7 @@ GameObject:
   - component: {fileID: 4000012277746618}
   - component: {fileID: 114000012451656592}
   - component: {fileID: 114000011289343190}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: PlayerSeeker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,7 +520,7 @@ GameObject:
   - component: {fileID: 114608261742712044}
   - component: {fileID: 114744567943828958}
   - component: {fileID: 65971227707729180}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: xmas hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -773,19 +770,6 @@ MonoBehaviour:
   rb: {fileID: 5473488}
   detachedVersion: {fileID: 1869848536822602, guid: 7c34c6936e5c841509e9724857d65375,
     type: 2}
---- !u!114 &114831021470162340
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000014254668284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1c0d642d6c742afb82a2a33d52d2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceAmtInitial: 110
-  Spark: {fileID: 1000012417029784, guid: 5cc80f2bad4a245939d27e42cbec72c0, type: 2}
 --- !u!135 &135000014156131136
 SphereCollider:
   m_ObjectHideFlags: 1

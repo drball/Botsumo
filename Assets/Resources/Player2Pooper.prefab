@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4880557499298150}
   - component: {fileID: 33869299506156806}
   - component: {fileID: 23062739362160320}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: pooper legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,8 +40,7 @@ GameObject:
   - component: {fileID: 135261883019857844}
   - component: {fileID: 23794208926942112}
   - component: {fileID: 95161063380483830}
-  - component: {fileID: 114119198495617314}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: Shield
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -58,7 +57,7 @@ GameObject:
   - component: {fileID: 4267587097429734}
   - component: {fileID: 114974319613824434}
   - component: {fileID: 114011174284544654}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: PlayerSeeker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +72,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4195326767340876}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Emitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +92,7 @@ GameObject:
   - component: {fileID: 114258644746442794}
   - component: {fileID: 114015373277455616}
   - component: {fileID: 65797347834224880}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: xmas hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +109,7 @@ GameObject:
   - component: {fileID: 4628270630800884}
   - component: {fileID: 33534550985228204}
   - component: {fileID: 23332258391486506}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: pooper body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +138,7 @@ GameObject:
   - component: {fileID: 65171136722391716}
   - component: {fileID: 65976371898309710}
   - component: {fileID: 95339817214760054}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Player2Pooper
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -157,7 +156,7 @@ GameObject:
   - component: {fileID: 33473777845767328}
   - component: {fileID: 65538961935476278}
   - component: {fileID: 23227606455480586}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +171,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4511490386788354}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Vfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -703,19 +702,6 @@ MonoBehaviour:
   rotationSpeed: 80
   speed: 3
   moving: 0
---- !u!114 &114119198495617314
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1173175796743962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1c0d642d6c742afb82a2a33d52d2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceAmtInitial: 110
-  Spark: {fileID: 1000012417029784, guid: e38a1b71a399a4742967d148b4d6ed66, type: 2}
 --- !u!114 &114231536961173876
 MonoBehaviour:
   m_ObjectHideFlags: 1

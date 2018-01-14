@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4000011911522826}
   - component: {fileID: 33000013138948958}
   - component: {fileID: 23000010140006670}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4000012890920310}
   - component: {fileID: 114000010575699526}
   - component: {fileID: 114000013792192508}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: PlayerSeeker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,8 +57,7 @@ GameObject:
   - component: {fileID: 135000012151070606}
   - component: {fileID: 23000013727019454}
   - component: {fileID: 95000010759063830}
-  - component: {fileID: 114443240641058818}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: Shield
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -73,7 +72,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4000012537688622}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: tracked robot spinning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +94,7 @@ GameObject:
   - component: {fileID: 65000013150378172}
   - component: {fileID: 65000014067763618}
   - component: {fileID: 114000013400555218}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: arms wrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +120,7 @@ GameObject:
   - component: {fileID: 114000013071940136}
   - component: {fileID: 114000011092210560}
   - component: {fileID: 114225139887148710}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Player2SpinningArms
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -138,7 +137,7 @@ GameObject:
   - component: {fileID: 4000011897468260}
   - component: {fileID: 33000011881680944}
   - component: {fileID: 23000010011080144}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: arms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +157,7 @@ GameObject:
   - component: {fileID: 114066874647538442}
   - component: {fileID: 114238259781541538}
   - component: {fileID: 65968608923922726}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: xmas hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -746,19 +745,6 @@ MonoBehaviour:
   rb: {fileID: 54000010257991658}
   detachedVersion: {fileID: 1869848536822602, guid: 7c34c6936e5c841509e9724857d65375,
     type: 2}
---- !u!114 &114443240641058818
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011363769082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1c0d642d6c742afb82a2a33d52d2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceAmtInitial: 110
-  Spark: {fileID: 1000012417029784, guid: e38a1b71a399a4742967d148b4d6ed66, type: 2}
 --- !u!135 &135000012151070606
 SphereCollider:
   m_ObjectHideFlags: 1

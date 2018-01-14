@@ -68,8 +68,6 @@ public class BtnScript_CS : MonoBehaviour
             //--restore button after 15 seconds
             Invoke("MyWaitingFunction", 15);
         }
-
-
     }
     void MyWaitingFunction()
     {

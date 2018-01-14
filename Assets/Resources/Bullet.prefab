@@ -3617,7 +3617,7 @@ MonoBehaviour:
   Vfx: {fileID: 111174}
   ParticleObj: {fileID: 185940}
   Owner: {fileID: 0}
-  forceAmount: 330
+  forceAmount: 370
   explosionScale: 1
   Explosion: {fileID: 140886, guid: 0b1e41deafe441642a8a23e8d2338f77, type: 2}
   coll: {fileID: 6514566}

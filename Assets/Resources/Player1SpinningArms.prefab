@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 135000011413881230}
   - component: {fileID: 23000013630648226}
   - component: {fileID: 95000013748652218}
-  - component: {fileID: 114542677199347134}
   m_Layer: 10
   m_Name: Shield
   m_TagString: Player
@@ -688,19 +687,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdd129622fcf446eb8c1482a52b4e25e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114542677199347134
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011514243900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1c0d642d6c742afb82a2a33d52d2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceAmtInitial: 110
-  Spark: {fileID: 1000012417029784, guid: 5cc80f2bad4a245939d27e42cbec72c0, type: 2}
 --- !u!135 &135000011413881230
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 499894}
   - component: {fileID: 3388220}
   - component: {fileID: 2329176}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 423390}
   - component: {fileID: 3319866}
   - component: {fileID: 2350370}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Coloured
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 452660}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: wheeled robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   - component: {fileID: 114000012318774850}
   - component: {fileID: 114000012933209304}
   - component: {fileID: 114631098490132834}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Player2C
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -339,8 +339,7 @@ GameObject:
   - component: {fileID: 135000011889965520}
   - component: {fileID: 23000013974256424}
   - component: {fileID: 95000010043792188}
-  - component: {fileID: 114801381365542172}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: Shield
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -357,7 +356,7 @@ GameObject:
   - component: {fileID: 4000011387438264}
   - component: {fileID: 114000011273875510}
   - component: {fileID: 114000011455978144}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: PlayerSeeker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,7 +376,7 @@ GameObject:
   - component: {fileID: 114151473171887540}
   - component: {fileID: 114560162316965048}
   - component: {fileID: 65116867005288348}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: xmas hat (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -624,19 +623,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee18cbed53a914b088c7fb7235a81725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114801381365542172
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010592529618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1c0d642d6c742afb82a2a33d52d2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceAmtInitial: 110
-  Spark: {fileID: 1000012417029784, guid: 5cc80f2bad4a245939d27e42cbec72c0, type: 2}
 --- !u!135 &135000011889965520
 SphereCollider:
   m_ObjectHideFlags: 1

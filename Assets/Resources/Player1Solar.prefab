@@ -45,9 +45,7 @@ GameObject:
   - component: {fileID: 33478796977525234}
   - component: {fileID: 135248254856557338}
   - component: {fileID: 23239326187222062}
-  - component: {fileID: 114291609729315994}
   - component: {fileID: 95894815997257476}
-  - component: {fileID: 114049890916342822}
   m_Layer: 10
   m_Name: Shield
   m_TagString: Player
@@ -394,19 +392,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114049890916342822
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1667079951383970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1c0d642d6c742afb82a2a33d52d2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceAmtInitial: 110
-  Spark: {fileID: 1000012417029784, guid: 5cc80f2bad4a245939d27e42cbec72c0, type: 2}
 --- !u!114 &114099043644466436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -433,19 +418,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityActive: 0
   abilityCountDown: 0
---- !u!114 &114291609729315994
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1667079951383970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aff1e9c4535d476c972bc1955562faf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shieldObj: {fileID: 1667079951383970}
-  shieldActive: 0
 --- !u!114 &114388990141562984
 MonoBehaviour:
   m_ObjectHideFlags: 1

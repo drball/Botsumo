@@ -9,7 +9,6 @@ public class BounceBackScript : MonoBehaviour {
 	public float forceAmtInitial = 110; //force - before modifications
 	private float forceAmt;
 	public GameObject Spark;
-	// public AudioSource hitAudioSource;
 	private Rigidbody otherRb;
 
 	// Use this for initialization
@@ -28,15 +27,15 @@ public class BounceBackScript : MonoBehaviour {
 		forceAmt = forceAmtInitial;
 	}
 
-	void FixedUpdate () {
+	// void FixedUpdate () {
 
-		//--debug
-		// if(Input.GetKey("up") ) {
-		// 	Debug.Log("forcemt = "+forceAmt);
-		// 	forceAmt += 10;
-		// 	Debug.Log("new forcemt = "+forceAmt);
-		// }
-	}
+	// 	//--debug
+	// 	if(Input.GetKey("up") ) {
+	// 		Debug.Log("forcemt = "+forceAmt);
+	// 		forceAmt += 10;
+	// 		Debug.Log("new forcemt = "+forceAmt);
+	// 	}
+	// }
 
 	void OnCollisionEnter (Collision collision) 
 	{
@@ -48,7 +47,17 @@ public class BounceBackScript : MonoBehaviour {
 		GameObject other = contact.otherCollider.gameObject;
 
 		Debug.Log("a collision has happened between "+contact.thisCollider.name +" and "+other.name);
+		
+		//--is the collider a sub-collider of the same object? 
+		if(transform.parent != null){
+			if(other.transform.name == transform.parent.name){
+				Debug.Log("collided with parent");
+				return;
+			}
+		}
+		
 
+		//--see if this is hitting another player - or an obstacle (layer 12)
 		if(other.CompareTag("Player") || other.layer == 12) {
 
 			//--create some sparks when we hit the other
@@ -69,27 +78,22 @@ public class BounceBackScript : MonoBehaviour {
 				otherRb = other.transform.parent.gameObject.GetComponent<Rigidbody>();
 			}
 
+			if (otherRb) {
+			
+				// Apply force to the target object - calculate force
 
+				float forceAmtLocal  = forceAmt;
+				Vector3 directionToOther = other.transform.position - gameObject.transform.position;
+				
+				if(other.tag == "Player") {
+					//--apply more force when hitting player
+					forceAmtLocal = forceAmt + 300;
+				} 
+				Debug.Log("---cog apply force of "+forceAmtLocal+" to "+other.name+" forceamt = "+forceAmt);
+
+				otherRb.AddForce((directionToOther * forceAmtLocal), ForceMode.Impulse);
+				otherRb.AddTorque(transform.up * 450, ForceMode.Impulse);
+			}
 		}
-
-		
-		if (otherRb) {
-			
-			// Apply force to the target object - calculate force
-
-			float forceAmtLocal  = forceAmt;
-			Vector3 directionToOther = other.transform.position - gameObject.transform.position;
-			
-			if(other.tag == "Player") {
-				//--apply more force when hitting player
-				forceAmtLocal = forceAmt + 300;
-			} 
-			Debug.Log("---cog apply force of "+forceAmtLocal+" to "+other.name+" forceamt = "+forceAmt);
-
-			otherRb.AddForce((directionToOther * forceAmtLocal), ForceMode.Impulse);
-			otherRb.AddTorque(transform.up * 450, ForceMode.Impulse);
-			
-		}
-		
 	}
 }

@@ -162,8 +162,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4145196511731620}
-  - component: {fileID: 33517120797024350}
-  - component: {fileID: 23949958958106606}
   - component: {fileID: 64836010769143662}
   - component: {fileID: 54726847045756740}
   - component: {fileID: 114256381942212850}
@@ -203,7 +201,6 @@ GameObject:
   - component: {fileID: 33984266085630328}
   - component: {fileID: 135597780582851560}
   - component: {fileID: 23967780800893934}
-  - component: {fileID: 114605037174916434}
   - component: {fileID: 95784398731682046}
   m_Layer: 10
   m_Name: Shield
@@ -743,40 +740,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!23 &23949958958106606
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1691498252141556}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!23 &23967780800893934
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -846,13 +809,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1547179842344194}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!33 &33517120797024350
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1691498252141556}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &33523435948930572
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -1171,19 +1127,6 @@ MonoBehaviour:
   rotationSpeed: 80
   speed: 3
   moving: 0
---- !u!114 &114605037174916434
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1762590555293712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1c0d642d6c742afb82a2a33d52d2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceAmtInitial: 110
-  Spark: {fileID: 1000012417029784, guid: e38a1b71a399a4742967d148b4d6ed66, type: 2}
 --- !u!114 &114668273150180228
 MonoBehaviour:
   m_ObjectHideFlags: 1

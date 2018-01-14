@@ -2,7 +2,7 @@
 
 public var shieldObj : GameObject;
 public var shieldActive : boolean;
-private var forceAmt : float = 250;
+private var forceAmt : float = 220;
 private var abilityCountDownInitial : int = 10;
 private var abilityCountDown : int = abilityCountDownInitial;
 
@@ -66,6 +66,10 @@ function OnCollisionEnter (collision : Collision)
 
 		Debug.Log("a shield collision has happened between "+contact.thisCollider.name +" and "+other.name);
 
+		if(other.transform.name == transform.name){
+			Debug.Log("NOPE");
+			return;
+		}
 		if(other.tag == "Player" || other.tag == "Box") {
 
 			//--create some sparks when we hit the other
@@ -86,28 +90,22 @@ function OnCollisionEnter (collision : Collision)
 				otherRb = other.transform.parent.gameObject.GetComponent.<Rigidbody>();
 			}
 
-		}
-
-		
-		if (otherRb) {
+			if (otherRb) {
 			
-			// Apply force to the target object - calculate force
+				// Apply force to the target object - calculate force
 
-			var forceAmtLocal : float = forceAmt;
-			var directionToOther = other.transform.position - gameObject.transform.position;
-		
-			if(other.tag == "Player") {
-				//--apply more force when hitting player
-				forceAmtLocal = forceAmt + 800;
-			} 
-			Debug.Log("---cog apply force of "+forceAmtLocal+" to "+other.name+" forcemat = "+forceAmt);
-
-			otherRb.AddForce((directionToOther * forceAmtLocal), ForceMode.Impulse);
-			otherRb.AddTorque(transform.right * 450, ForceMode.Impulse);
+				var forceAmtLocal : float = forceAmt;
+				var directionToOther = other.transform.position - gameObject.transform.position;
 			
+				if(other.tag == "Player") {
+					//--apply more force when hitting player
+					forceAmtLocal = forceAmt + 700;
+				} 
+				Debug.Log("---shield apply force of "+forceAmtLocal+" to "+other.name+" forcemat = "+forceAmt);
+
+				otherRb.AddForce((directionToOther * forceAmtLocal), ForceMode.Impulse);
+				otherRb.AddTorque(transform.right * 550, ForceMode.Impulse);
+			}
 		}
 	}
-
-
-	
 }

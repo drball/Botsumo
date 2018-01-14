@@ -459,8 +459,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityActive: 0
   abilityCountDown: 5
-  movingHead: {fileID: 0}
-  target: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -484,7 +482,6 @@ GameObject:
   - component: {fileID: 135000010608912524}
   - component: {fileID: 23000012316121478}
   - component: {fileID: 95000013937729306}
-  - component: {fileID: 114200762042624640}
   m_Layer: 10
   m_Name: Shield
   m_TagString: Player
@@ -676,19 +673,6 @@ MonoBehaviour:
   rotationSpeed: 40
   speed: 2
   moving: 0
---- !u!114 &114200762042624640
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012161885086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1c0d642d6c742afb82a2a33d52d2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceAmtInitial: 110
-  Spark: {fileID: 1000012417029784, guid: 5cc80f2bad4a245939d27e42cbec72c0, type: 2}
 --- !u!114 &114356997175196538
 MonoBehaviour:
   m_ObjectHideFlags: 1

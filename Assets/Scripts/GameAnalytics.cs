@@ -30,6 +30,12 @@ public class GameAnalytics : MonoBehaviour {
 
     void ChoseCharacter(string botName){
         //--called from sendmessage from the character select screen
-        Debug.Log("chose a bot! "+botName);
+        // Debug.Log("chose a bot! "+botName);
+
+        //--send analytics event
+        Analytics.CustomEvent("characterSelection", new Dictionary<string, object>
+        {
+            { "characterSelected", botName }
+        });
     }
 }

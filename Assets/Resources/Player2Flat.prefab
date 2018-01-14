@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4559269179716626}
   - component: {fileID: 114363930154495034}
   - component: {fileID: 114625211094653952}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: PlayerSeeker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,8 +57,7 @@ GameObject:
   - component: {fileID: 135521404987533958}
   - component: {fileID: 23604560871209414}
   - component: {fileID: 95648067731401766}
-  - component: {fileID: 114103206808585570}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: Shield
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -75,7 +74,7 @@ GameObject:
   - component: {fileID: 4981813600367608}
   - component: {fileID: 33541240472367602}
   - component: {fileID: 23118546680630538}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Vfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,8 +93,8 @@ GameObject:
   - component: {fileID: 64609518913518048}
   - component: {fileID: 54085703165942022}
   - component: {fileID: 114289752429689418}
-  m_Layer: 8
-  m_Name: Collider
+  m_Layer: 14
+  m_Name: P2FlatCollider
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4352300771302346}
   - component: {fileID: 114307768715578000}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: CogWrapper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +138,7 @@ GameObject:
   - component: {fileID: 65122449050302060}
   - component: {fileID: 65015747958383602}
   - component: {fileID: 114339560214084080}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Player2Flat
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -209,7 +208,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1876854574848072}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: 1.6856889, y: -0.40363884, z: -2.1079338}
+  m_LocalPosition: {x: -9.934984, y: 4.194336, z: 1.3178972}
   m_LocalScale: {x: 0.62053096, y: 0.6205311, z: 0.620533}
   m_Children:
   - {fileID: 4169041227785466}
@@ -461,7 +460,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
@@ -518,8 +517,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7529993, y: 0.49254417, z: 0.9017838}
-  m_Center: {x: 0.016369473, y: 0.25372782, z: 0.41742238}
+  m_Size: {x: 1.7529993, y: 0.48036948, z: 0.88047713}
+  m_Center: {x: 0.016369471, y: 0.25981516, z: 0.40676904}
 --- !u!65 &65217595408627140
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -530,8 +529,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.43495676, y: 0.7539672, z: 0.7076831}
-  m_Center: {x: -0.8472217, y: 0.6550347, z: 0.9818101}
+  m_Size: {x: 0.38930064, y: 0.7539672, z: 0.7076831}
+  m_Center: {x: -0.8700498, y: 0.6550347, z: 0.9818101}
 --- !u!65 &65218759505240868
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -542,8 +541,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5007293, y: 0.8772271, z: 0.36977276}
-  m_Center: {x: 0.8716785, y: 1.3300256, z: -1.330021}
+  m_Size: {x: 0.49159724, y: 0.8772271, z: 0.36977276}
+  m_Center: {x: 0.87624454, y: 1.3300256, z: -1.330021}
 --- !u!65 &65255286135938962
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -597,19 +596,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114103206808585570
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1605700167825994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1c0d642d6c742afb82a2a33d52d2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceAmtInitial: 110
-  Spark: {fileID: 1000012417029784, guid: e38a1b71a399a4742967d148b4d6ed66, type: 2}
 --- !u!114 &114289752429689418
 MonoBehaviour:
   m_ObjectHideFlags: 1

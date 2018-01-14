@@ -125,7 +125,6 @@ GameObject:
   - component: {fileID: 135652256951426438}
   - component: {fileID: 23463028124037520}
   - component: {fileID: 95932195854594818}
-  - component: {fileID: 114695350606678472}
   m_Layer: 10
   m_Name: Shield
   m_TagString: Player
@@ -701,19 +700,6 @@ MonoBehaviour:
   vfxObj: {fileID: 1546453730283454}
   playerNum: 1
   playerCharacter: Pooper
---- !u!114 &114695350606678472
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1609418831237436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1c0d642d6c742afb82a2a33d52d2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceAmtInitial: 110
-  Spark: {fileID: 1000012417029784, guid: 5cc80f2bad4a245939d27e42cbec72c0, type: 2}
 --- !u!114 &114787534733226494
 MonoBehaviour:
   m_ObjectHideFlags: 1
