@@ -12,7 +12,7 @@ public class GameAnalytics : MonoBehaviour {
     }
 	
 	void StartLevel() {
-	    //--called by game controller when the level is reset
+	    //--called by game controller at end of game when the level is reset
 
         timesPlayed = PlayerPrefs.GetInt("timesPlayed");
 
@@ -27,4 +27,9 @@ public class GameAnalytics : MonoBehaviour {
 
         Debug.Log("times played = "+timesPlayed);
 	}
+
+    void ChoseCharacter(string botName){
+        //--called from sendmessage from the character select screen
+        Debug.Log("chose a bot! "+botName);
+    }
 }

@@ -83,11 +83,17 @@ function selectCharacter(playerNum : int) {
 		P2Btn.SetActive(false);
 		P2WaitMsg.SetActive(true);
 	}
+
+
 	
 	//--load next level if both selected
 	
 	if( p1SelectedCharString && p2SelectedCharString ){
 		Debug.Log("both ready!");
+
+		//--report the character which has been chosen to analytics
+		gameObject.SendMessage("ChoseCharacter", p1SelectedCharString);
+		gameObject.SendMessage("ChoseCharacter", p2SelectedCharString);
 		
 		//--show loading panel because there's a delay
 		LoadingPanel.SetActive(true);

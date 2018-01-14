@@ -14,10 +14,8 @@ public var SinglePlayer : boolean = false;
 public var RBtn : GameObject; //--used for removing this when in single player mode
 public var RInstruction : GameObject;
 
-public var test : GameObject;
-
 private var winningScore : int = 5;
-private var defaultPlayer : String = "Razorback"; //A B C Cog, SpinningArms, Solar
+private var defaultPlayer : String = "Flat"; //A B C Cog, SpinningArms, Solar
 private var AdvertController : AdvertController;
 private var LevelsController : LevelsController; 
 
@@ -48,8 +46,6 @@ function Start () {
 
 	LevelsController = GameObject.Find("LevelsController").GetComponent.<LevelsController>();
 
-	test = Player2.gameObject.Find("PlayerSeeker");
-
 	//--if the game is single player, disable the normal player movement script
 	//--and activate the object containing single player scripts
 	if(LevelsController.singlePlayer) {
@@ -70,6 +66,8 @@ function Start () {
 
 	//--get the advert script
 	AdvertController = GetComponent.<AdvertController>(); 
+
+	
 }
 
 function LoadPlayer(dummyObjName, playerNum){
@@ -92,7 +90,7 @@ function LoadPlayer(dummyObjName, playerNum){
 		
 		//--for debug - if we load this scene without the player selection
 		if(playerNum == 1){
-			playerToLoad = "Player1Razorback";
+			playerToLoad = "Player1Flat";
 		}
 	}
 	
@@ -181,6 +179,7 @@ function EndRound() {
 		//--show "play again" button
 		PlayAgainBtn.SetActive(true);
 
+		//--show advert after a few seconds 
 		yield WaitForSeconds(1);
 
 		AdvertController.ShowAdvert();

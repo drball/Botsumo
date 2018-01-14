@@ -9,6 +9,7 @@ public class BounceBackScript : MonoBehaviour {
 	public float forceAmtInitial = 110; //force - before modifications
 	private float forceAmt;
 	public GameObject Spark;
+	// public AudioSource hitAudioSource;
 	private Rigidbody otherRb;
 
 	// Use this for initialization
@@ -67,6 +68,7 @@ public class BounceBackScript : MonoBehaviour {
 				//-maybe this object has a separate rb & collider - try the parent
 				otherRb = other.transform.parent.gameObject.GetComponent<Rigidbody>();
 			}
+
 
 		}
 
