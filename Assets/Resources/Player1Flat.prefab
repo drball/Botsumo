@@ -694,7 +694,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1c0d642d6c742afb82a2a33d52d2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceAmtInitial: 180
+  forceAmtInitial: 190
+  forceAmt: 0
   Spark: {fileID: 1000012417029784, guid: e38a1b71a399a4742967d148b4d6ed66, type: 2}
 --- !u!135 &135241767526906230
 SphereCollider:

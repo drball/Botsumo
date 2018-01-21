@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4000011814800214}
   - component: {fileID: 64000010728401700}
-  - component: {fileID: 114771305406072226}
   m_Layer: 14
   m_Name: P2CogCollider
   m_TagString: Player
@@ -546,7 +545,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpinScript: {fileID: 114747438822858022}
-  bounceBackScript: {fileID: 114771305406072226}
+  bounceBackScript: {fileID: 114854846342999864}
+  level: 1
+  spinAudio: {fileID: 0}
+  spinAudioVolume: 0
+  spinAudioPitch: 0
 --- !u!114 &114747438822858022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -561,19 +564,6 @@ MonoBehaviour:
   spinX: 0
   spinY: 0
   spinZ: 200
---- !u!114 &114771305406072226
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010122941166}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a1c0d642d6c742afb82a2a33d52d2df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceAmtInitial: 110
-  Spark: {fileID: 1000012417029784, guid: e38a1b71a399a4742967d148b4d6ed66, type: 2}
 --- !u!114 &114854846342999864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -586,6 +576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceAmtInitial: 110
+  forceAmt: 0
   Spark: {fileID: 1000012417029784, guid: e38a1b71a399a4742967d148b4d6ed66, type: 2}
 --- !u!135 &135000012761781832
 SphereCollider:

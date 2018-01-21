@@ -7,7 +7,7 @@ using UnityEngine;
 public class BounceBackScript : MonoBehaviour {
 
 	public float forceAmtInitial = 110; //force - before modifications
-	private float forceAmt;
+	public float forceAmt;
 	public GameObject Spark;
 	private Rigidbody otherRb;
 
@@ -18,7 +18,7 @@ public class BounceBackScript : MonoBehaviour {
 	
 	public void ChangeForceAmt (float cogSpeed){
 		//--called when player collects pickup or pickup times out - based on speed of cog
-		forceAmt = cogSpeed * 0.40f;
+		forceAmt = cogSpeed * 0.50f;
 		Debug.Log("change force amt = "+forceAmt+". cogspeed = "+cogSpeed);
 	}
 
@@ -32,15 +32,13 @@ public class BounceBackScript : MonoBehaviour {
 	// 	//--debug
 	// 	if(Input.GetKey("up") ) {
 	// 		Debug.Log("forcemt = "+forceAmt);
-	// 		forceAmt += 10;
+	// 		forceAmt += 10f;
 	// 		Debug.Log("new forcemt = "+forceAmt);
 	// 	}
 	// }
 
 	void OnCollisionEnter (Collision collision) 
 	{
-
-		forceAmt = forceAmt; //--needed?
 
 		ContactPoint contact = collision.contacts[0];
 
@@ -82,7 +80,7 @@ public class BounceBackScript : MonoBehaviour {
 			
 				// Apply force to the target object - calculate force
 
-				float forceAmtLocal  = forceAmt;
+				float forceAmtLocal = forceAmt;
 				Vector3 directionToOther = other.transform.position - gameObject.transform.position;
 				
 				if(other.tag == "Player") {
