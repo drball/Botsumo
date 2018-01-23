@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 6514566}
   - component: {fileID: 8233344}
   - component: {fileID: 114358338776426288}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,8 +58,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123758}
-  m_LocalRotation: {x: 0, y: 0.9569721, z: 0, w: 0.2901801}
-  m_LocalPosition: {x: 2.245, y: -0.031, z: 0.045}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.781517, y: 37.601154, z: 31.48246}
   m_LocalScale: {x: 0.23867095, y: 0.23867093, z: 0.23867093}
   m_Children:
   - {fileID: 464286}
@@ -144,8 +144,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.5089656, z: 0.47376552}
-  m_Center: {x: 0.00005860447, y: -0.007030278, z: 0.0048847175}
+  m_Size: {x: 1, y: 0.8783186, z: 0.8569733}
+  m_Center: {x: 0.000058594225, y: -0.016262911, z: 0.0071965395}
 --- !u!82 &8233344
 AudioSource:
   m_ObjectHideFlags: 1
@@ -3617,7 +3617,7 @@ MonoBehaviour:
   Vfx: {fileID: 111174}
   ParticleObj: {fileID: 185940}
   Owner: {fileID: 0}
-  forceAmount: 370
+  forceAmount: 400
   explosionScale: 1
   Explosion: {fileID: 140886, guid: 0b1e41deafe441642a8a23e8d2338f77, type: 2}
   coll: {fileID: 6514566}

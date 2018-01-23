@@ -28,15 +28,17 @@ public class BulletScript : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) 
 	{
+		Debug.Log("bullet hits "+other.name);
+
 		if((other.gameObject == Owner) || (other.gameObject.name == "Shield")) {
 
-			Debug.Log("hitting self");
+			Debug.Log("bullet hitting self");
 			
 		} else {
 			coll.enabled = false;
 		
 			if (other.GetComponent<Rigidbody>()) {
-				Debug.Log("apply force to "+other.name);
+				Debug.Log("bullet apply force to "+other.name);
 				// Apply force to the target object - calculate force
 				
 				if(other.tag == "Player") {
@@ -63,6 +65,7 @@ public class BulletScript : MonoBehaviour {
 			explosionInstance.transform.localScale = new Vector3(explosionScale,explosionScale,explosionScale);
 			
 			Destroy(explosionInstance,3);
+			Destroy(gameObject,2);
 
 		}
 	}

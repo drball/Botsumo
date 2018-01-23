@@ -9,11 +9,14 @@ public class BounceBackScript : MonoBehaviour {
 	public float forceAmtInitial = 110; //force - before modifications
 	public float forceAmt;
 	public GameObject Spark;
+	public CameraShake CameraShake;
 	private Rigidbody otherRb;
 
 	// Use this for initialization
 	void Start () {
 		forceAmt = forceAmtInitial;
+		CameraShake = GameObject.Find("Main Camera").GetComponent<CameraShake>();
+
 	}
 	
 	public void ChangeForceAmt (float cogSpeed){
@@ -82,6 +85,10 @@ public class BounceBackScript : MonoBehaviour {
 
 				float forceAmtLocal = forceAmt;
 				Vector3 directionToOther = other.transform.position - gameObject.transform.position;
+
+				if(forceAmtLocal > 450f){
+					CameraShake.Shake();
+				}
 				
 				if(other.tag == "Player") {
 					//--apply more force when hitting player
@@ -91,6 +98,9 @@ public class BounceBackScript : MonoBehaviour {
 
 				otherRb.AddForce((directionToOther * forceAmtLocal), ForceMode.Impulse);
 				otherRb.AddTorque(transform.up * 450, ForceMode.Impulse);
+
+				
+				
 			}
 		}
 	}

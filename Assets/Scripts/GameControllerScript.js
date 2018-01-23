@@ -90,7 +90,7 @@ function LoadPlayer(dummyObjName, playerNum){
 		
 		//--for debug - if we load this scene without the player selection
 		if(playerNum == 1){
-			playerToLoad = "Player1Cog";
+			playerToLoad = "Player1B";
 		}
 	}
 	
