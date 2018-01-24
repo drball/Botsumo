@@ -43,6 +43,7 @@ public class AirstrikeController : MonoBehaviour {
 			Invoke("CreateBullet", initialDelay + 1.6f);
 			Invoke("CreateBullet", initialDelay + 1.7f);
 			Invoke("CreateBullet", initialDelay + 1.75f);
+			Invoke("CreateBullet", initialDelay + 1.75f);
 			Invoke("CreateBullet", initialDelay + 2f);
 			Invoke("CreateBullet", initialDelay + 2.25f);
 			Invoke("CreateBullet", initialDelay + 2.5f);

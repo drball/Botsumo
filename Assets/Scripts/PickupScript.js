@@ -50,7 +50,7 @@ function OnTriggerEnter(other: Collider)
 	    collectionSfx.Play();
 
 	    //--random chance of airstrike OR give player ability 
-	    var rand = Mathf.Floor(Random.Range(0, 10f)); //--make the 2nd number higher for less chance of airstrike
+	    var rand = Mathf.Floor(Random.Range(0, 22f)); //--make the 2nd number higher for less chance of airstrike
 	    Debug.Log("rand"+rand);
 	    if(rand <= 1){
     		//--it's airstrike 
