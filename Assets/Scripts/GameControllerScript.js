@@ -15,7 +15,7 @@ public var RBtn : GameObject; //--used for removing this when in single player m
 public var RInstruction : GameObject;
 
 private var winningScore : int = 5;
-private var defaultPlayer : String = "Flat"; //A B C Cog, SpinningArms, Solar
+private var defaultPlayer : String = "Dozer"; //A B C Cog, SpinningArms, Solar
 private var AdvertController : AdvertController;
 private var LevelsController : LevelsController; 
 
@@ -90,7 +90,7 @@ function LoadPlayer(dummyObjName, playerNum){
 		
 		//--for debug - if we load this scene without the player selection
 		if(playerNum == 1){
-			playerToLoad = "Player1B";
+			playerToLoad = "Player1Dozer";
 		}
 	}
 	

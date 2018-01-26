@@ -144,12 +144,12 @@ function showOnlyP1Character (charToShow : int) {
 		UnlockP1Btn.SetActive(true);
 		UnlockP1BtnScript.selectedBot = "Pooper";
 
-	// } else if((charToShow == 8) && (!isFlatUnlocked) && (VersionController.paidVersion == false)){
-	// 	Debug.Log("p1 has selected pooper");
-	// 	P1Btn.GetComponent.<Button>().interactable = false; //--this bots btn should be disabled
-	// 	//--show unlock button 
-	// 	UnlockP1Btn.SetActive(true);
-	// 	UnlockP1BtnScript.selectedBot = "Flat";
+	} else if((charToShow == 8) && (!isFlatUnlocked) && (VersionController.paidVersion == false)){
+		Debug.Log("p1 has selected pooper");
+		P1Btn.GetComponent.<Button>().interactable = false; //--this bots btn should be disabled
+		//--show unlock button 
+		UnlockP1Btn.SetActive(true);
+		UnlockP1BtnScript.selectedBot = "Flat";
 
 	} else {
 		UnlockP1Btn.SetActive(false);
@@ -202,12 +202,12 @@ function showOnlyP2Character (charToShow : int) {
 		UnlockP2Btn.SetActive(true);
 		UnlockP2BtnScript.selectedBot = "Pooper";
 
-	// } else if((charToShow == 8) && (!isFlatUnlocked) && (VersionController.paidVersion == false)){
-	// 	Debug.Log("p2 has selected flat");
-	// 	P2Btn.GetComponent.<Button>().interactable = false; //--this bots btn should be disabled
-	// 	//--show unlock button 
-	// 	UnlockP2Btn.SetActive(true);
-	// 	UnlockP2BtnScript.selectedBot = "Flat";
+	} else if((charToShow == 8) && (!isFlatUnlocked) && (VersionController.paidVersion == false)){
+		Debug.Log("p2 has selected flat");
+		P2Btn.GetComponent.<Button>().interactable = false; //--this bots btn should be disabled
+		//--show unlock button 
+		UnlockP2Btn.SetActive(true);
+		UnlockP2BtnScript.selectedBot = "Flat";
 
 	} else {
 		UnlockP2Btn.SetActive(false);

@@ -7,25 +7,28 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: Assets/Scenes/Menu/intro.unity
-    guid: 00000000000000000000000000000000
+    guid: 536bad141f140af42bfb482030b9e6ae
   - enabled: 1
     path: Assets/Scenes/Menu/menu.unity
-    guid: 00000000000000000000000000000000
+    guid: f4de3567748996b44b4327f53bd185eb
   - enabled: 1
     path: Assets/Scenes/main.unity
-    guid: 00000000000000000000000000000000
+    guid: 52d1243e2b0ebac49a6af101fea65874
   - enabled: 0
     path: Assets/Scenes/Menu/intro.unity
-    guid: 00000000000000000000000000000000
+    guid: 536bad141f140af42bfb482030b9e6ae
   - enabled: 1
     path: Assets/Scenes/Menu/playerSelect.unity
-    guid: 00000000000000000000000000000000
+    guid: 8bba5fab08271e741a4d8755dc1757b5
   - enabled: 1
     path: Assets/Scenes/pit.unity
-    guid: 00000000000000000000000000000000
+    guid: 4c95521a61cce4fbeb00d1072703cff6
   - enabled: 1
     path: Assets/Scenes/Menu/levelSelect.unity
-    guid: 00000000000000000000000000000000
+    guid: 5d323660804364a31b59d26bc9f43076
   - enabled: 1
     path: Assets/Scenes/unstable.unity
-    guid: 00000000000000000000000000000000
+    guid: 9a3300990176d4f1b8707167eade3086
+  - enabled: 1
+    path: Assets/Scenes/moving.unity
+    guid: 53eb058236906464f81015f0f7b4fc21
