@@ -36,6 +36,9 @@ GameObject:
   - component: {fileID: 114000012598516724}
   - component: {fileID: 114000013562666290}
   - component: {fileID: 114639118673658624}
+  - component: {fileID: 114198077526241722}
+  - component: {fileID: 114522695408252624}
+  - component: {fileID: 114123371015753522}
   m_Layer: 14
   m_Name: Player2A
   m_TagString: Player
@@ -291,7 +294,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147684}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d173f5862b21e2941a15e75a2c5220ef, type: 3}
   m_Name: 
@@ -304,12 +307,11 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147684}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9329beef74b08e44d9db212f85c3c412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameController: {fileID: 0}
   alive: 1
   score: 0
   hasMoved: 0
@@ -566,13 +568,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147684}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8b5dcd5399a649e1922388d70396e16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 80
-  speed: 3
+  rotationSpeed: 0.5
+  speed: 1
   moving: 0
 --- !u!114 &114000013562666290
 MonoBehaviour:
@@ -587,6 +589,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shieldObj: {fileID: 1000010108205878}
   shieldActive: 0
+--- !u!114 &114123371015753522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b235ec4296ca24e41b6bfac55cf0dfa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0.5
+  speed: 1
+  moving: 0
+--- !u!114 &114198077526241722
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986a075d3596f44a9a633f75355d0815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
+  alive: 1
+  score: 0
+  hasMoved: 0
+  vfxObj: {fileID: 185358}
+  playerNum: 2
+  playerCharacter: A
 --- !u!114 &114272603506465016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -601,6 +635,19 @@ MonoBehaviour:
   rb: {fileID: 5477012}
   detachedVersion: {fileID: 1869848536822602, guid: 7c34c6936e5c841509e9724857d65375,
     type: 2}
+--- !u!114 &114522695408252624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b819dcfcf1ea49dfa8beb81a24db61f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityActive: 0
+  abilityCountDown: 0
 --- !u!114 &114639118673658624
 MonoBehaviour:
   m_ObjectHideFlags: 1

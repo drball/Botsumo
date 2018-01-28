@@ -3,7 +3,7 @@
 // public var rotationSpeed : float = .5;
 // public var speed : float = 1;
 
-public var GameController : GameControllerScript;
+// public var GameController : GameControllerScript; //--removing for now 15L46
 public var alive = true;
 public var score : int = 0;
 public var hasMoved = false; //--use this to determine when to hide instruction
@@ -19,95 +19,95 @@ private var startingRotation : Quaternion;
 private var Btn : GameObject; //--the button for this player (used for hiding the instruction)
 
 
-function Start () {
-	GameController = GameObject.Find("GameController").GetComponent.<GameControllerScript>();
+// function Start () {
+// 	GameController = GameObject.Find("GameController").GetComponent.<GameControllerScript>();
 	
-	InvokeRepeating("Timer", 1, 1);
+// 	InvokeRepeating("Timer", 1, 1);
 	
-	//--save start locations to variables
-	startingPos = transform.position;
+// 	//--save start locations to variables
+// 	startingPos = transform.position;
 	
-	startingRotation = transform.rotation;
+// 	startingRotation = transform.rotation;
 	
-	Respot();
+// 	Respot();
 
-	var rb = GetComponent.<Rigidbody>();
+// 	var rb = GetComponent.<Rigidbody>();
 	
-	if(playerNum == 1){
-		Btn = GameObject.Find("LInstruction");
-	} else {
-		Btn = GameObject.Find("RInstruction");
-	}
-}
+// 	if(playerNum == 1){
+// 		Btn = GameObject.Find("LInstruction");
+// 	} else {
+// 		Btn = GameObject.Find("RInstruction");
+// 	}
+// }
 
 
-function Update() {
+// function Update() {
 
-	if ((transform.position.y < fallingYPos) && alive == true){
+// 	if ((transform.position.y < fallingYPos) && alive == true){
 		
-		alive = false;
+// 		alive = false;
 				
-		if(GameController.roundActive == true){
+// 		if(GameController.roundActive == true){
 
-			GameController.EndRound();
-		}
-	}
-}
+// 			GameController.EndRound();
+// 		}
+// 	}
+// }
 
 
-function Respot(){
-	//--reset position
-	transform.position = startingPos;
+// function Respot(){
+// 	//--reset position
+// 	transform.position = startingPos;
 	
-	//--reset rotation
-	transform.rotation = startingRotation;
+// 	//--reset rotation
+// 	transform.rotation = startingRotation;
 	
-	//--make player blink for a bit
-	var blinkingAmt : int = 0;
+// 	//--make player blink for a bit
+// 	var blinkingAmt : int = 0;
 	
-	while(blinkingAmt < 8) {
-        yield WaitForSeconds(0.06);
+// 	while(blinkingAmt < 8) {
+//         yield WaitForSeconds(0.06);
     
-		if(vfxObj.activeSelf == true){
-        	vfxObj.SetActive(false);
-    	}else {
-    		vfxObj.SetActive(true);
-    	}
+// 		if(vfxObj.activeSelf == true){
+//         	vfxObj.SetActive(false);
+//     	}else {
+//     		vfxObj.SetActive(true);
+//     	}
         
-        blinkingAmt++;
-    }
+//         blinkingAmt++;
+//     }
     
-    vfxObj.SetActive(true);
+//     vfxObj.SetActive(true);
 	
-}
+// }
 
-function Timer(){
-	//--1 second cron
-	//--count how long it's been on it's side.
+// function Timer(){
+// 	//--1 second cron
+// 	//--count how long it's been on it's side.
 	
-	//Debug.Log("z = "+transform.eulerAngles.z+"x = "+transform.eulerAngles.x);
-	if( ((transform.eulerAngles.x >= 70) && (transform.eulerAngles.x <= 300)) || ((transform.eulerAngles.z >= 70) && (transform.eulerAngles.z <= 300)) )
-	{
-		badRotationTimer++;
-		// Debug.Log("-------------------bad rot. x="+transform.eulerAngles.x+" y="+transform.eulerAngles.y+" z ="+transform.eulerAngles.z);
-	} else {
-		badRotationTimer = 0;
-	}
+// 	//Debug.Log("z = "+transform.eulerAngles.z+"x = "+transform.eulerAngles.x);
+// 	if( ((transform.eulerAngles.x >= 70) && (transform.eulerAngles.x <= 300)) || ((transform.eulerAngles.z >= 70) && (transform.eulerAngles.z <= 300)) )
+// 	{
+// 		badRotationTimer++;
+// 		// Debug.Log("-------------------bad rot. x="+transform.eulerAngles.x+" y="+transform.eulerAngles.y+" z ="+transform.eulerAngles.z);
+// 	} else {
+// 		badRotationTimer = 0;
+// 	}
 	
-	//--restart if been on it's side for more than 3 seconds
-	if((badRotationTimer > 3) && (alive == true)){
-		badRotationTimer = 0;
-		Respot();
-	}
+// 	//--restart if been on it's side for more than 3 seconds
+// 	if((badRotationTimer > 3) && (alive == true)){
+// 		badRotationTimer = 0;
+// 		Respot();
+// 	}
 	
-	//Debug.Log("rotTimer = "+badRotationTimer);
+// 	//Debug.Log("rotTimer = "+badRotationTimer);
 	
-}
+// }
 
-function HideInstruction(){
-	Debug.Log("hide btn for"+ Btn.name);
+// function HideInstruction(){
+// 	Debug.Log("hide btn for"+ Btn.name);
 
-	//--fade the instruction out for this player's control btn
-	Btn.GetComponent.<Animator>().Play("FadeOut");
-}
+// 	//--fade the instruction out for this player's control btn
+// 	Btn.GetComponent.<Animator>().Play("FadeOut");
+// }
 

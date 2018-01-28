@@ -15,12 +15,9 @@ function Start () {
 	InvokeRepeating("Countdown", 0, 1);
 }
 
-
-
 function Countdown(){
 	if((abilityCountDown > 0) && (abilityActive == true)){
 		abilityCountDown--;
-//		Debug.Log("countdown: "+abilityCountDown);
 		
 		if(abilityCountDown <=0){
 			DisableAbility();
@@ -34,24 +31,6 @@ function FixedUpdate () {
 	if(Input.GetKey("a") ) {
 		ActivateAbility();
 	}
-}
-
-function Update(){
-
-	// if(PlayerScript.playerCharacter == "Solar") {
-
-	// 	if(target){
-
-	// 		var rotation = transform.rotation;
-
-	// 		if(abilityActive){
-	// 			rotation = Quaternion.LookRotation(Vector3(target.transform.position.x, movingHead.transform.position.y, target.transform.position.z) - movingHead.transform.position);
-	// 		} 
-
- // 			movingHead.transform.rotation = Quaternion.Slerp(movingHead.transform.rotation, rotation, Time.deltaTime * 6f);
-
-	// 	}
-	// }
 }
 
 function ActivateAbility () {

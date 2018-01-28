@@ -65,6 +65,9 @@ GameObject:
   - component: {fileID: 114000011428406650}
   - component: {fileID: 114460815102452632}
   - component: {fileID: 114571162164464612}
+  - component: {fileID: 114173449844417240}
+  - component: {fileID: 114750984374658438}
+  - component: {fileID: 114298108541503184}
   m_Layer: 8
   m_Name: Player1Cog
   m_TagString: Player
@@ -118,7 +121,7 @@ GameObject:
   - component: {fileID: 33000012395907800}
   - component: {fileID: 23000013729648724}
   m_Layer: 8
-  m_Name: small cogs robot
+  m_Name: vfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -361,9 +364,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 0
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 1
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: fa457bcc02a4248739c5ec6df8bf62cc, type: 3}
 --- !u!64 &64000012836561690
@@ -375,9 +378,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 1
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 1.00000005e-20
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!65 &65000010932437606
@@ -519,7 +522,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011805834480}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d173f5862b21e2941a15e75a2c5220ef, type: 3}
   m_Name: 
@@ -545,13 +548,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011805834480}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8b5dcd5399a649e1922388d70396e16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 80
-  speed: 3
+  rotationSpeed: 0.5
+  speed: 1
   moving: 0
 --- !u!114 &114000012908620256
 MonoBehaviour:
@@ -559,12 +562,11 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011805834480}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9329beef74b08e44d9db212f85c3c412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameController: {fileID: 0}
   alive: 1
   score: 0
   hasMoved: 0
@@ -585,6 +587,38 @@ MonoBehaviour:
   spinX: 0
   spinY: 0
   spinZ: 200
+--- !u!114 &114173449844417240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011805834480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986a075d3596f44a9a633f75355d0815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
+  alive: 1
+  score: 0
+  hasMoved: 0
+  vfxObj: {fileID: 1000013850133390}
+  playerNum: 1
+  playerCharacter: Cog
+--- !u!114 &114298108541503184
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011805834480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b235ec4296ca24e41b6bfac55cf0dfa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 100
+  speed: 3
+  moving: 0
 --- !u!114 &114460815102452632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -600,8 +634,6 @@ MonoBehaviour:
   bounceBackScript: {fileID: 114571162164464612}
   level: 1
   spinAudio: {fileID: 82282423116032826}
-  spinAudioVolume: 0
-  spinAudioPitch: 0
 --- !u!114 &114571162164464612
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -616,6 +648,20 @@ MonoBehaviour:
   forceAmtInitial: 110
   forceAmt: 0
   Spark: {fileID: 1000012417029784, guid: e38a1b71a399a4742967d148b4d6ed66, type: 2}
+  CameraShake: {fileID: 0}
+--- !u!114 &114750984374658438
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011805834480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b819dcfcf1ea49dfa8beb81a24db61f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityActive: 0
+  abilityCountDown: 0
 --- !u!135 &135000013110859390
 SphereCollider:
   m_ObjectHideFlags: 1

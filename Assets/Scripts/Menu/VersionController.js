@@ -15,3 +15,7 @@ function Awake () {
 		Destroy(gameObject);
 	}
 }
+
+function SwitchToPaid(){
+	
+}

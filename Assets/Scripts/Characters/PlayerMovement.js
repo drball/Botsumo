@@ -12,47 +12,47 @@ function Start () {
 	rb = GetComponent.<Rigidbody>();
 }
 
-function FixedUpdate () 
-{
-	if ((moving == true) && (PlayerController.alive == true)){
+// function FixedUpdate () 
+// {
+// 	if ((moving == true) && (PlayerController.alive == true)){
 	
-		//-- stop it rotating
-		rb.angularVelocity = Vector3.zero;
+// 		//-- stop it rotating
+// 		rb.angularVelocity = Vector3.zero;
 	
-		//-- move forward
-		rb.AddRelativeForce (Vector3.forward * speed, ForceMode.Impulse);
+// 		//-- move forward
+// 		rb.AddRelativeForce (Vector3.forward * speed, ForceMode.Impulse);
 
-		transform.Translate(Vector3.forward * speed * Time.deltaTime);
+// 		transform.Translate(Vector3.forward * speed * Time.deltaTime);
 	
 		
-		//--if gets too fast, constrain speed
-		if (rb.velocity.magnitude > speed) 
-		{
-	    	//GetComponent.<Rigidbody>().velocity = GetComponent.<Rigidbody>().velocity.normalized * speed;
-		}
+// 		//--if gets too fast, constrain speed
+// 		if (rb.velocity.magnitude > speed) 
+// 		{
+// 	    	//GetComponent.<Rigidbody>().velocity = GetComponent.<Rigidbody>().velocity.normalized * speed;
+// 		}
 	
-	} else {
+// 	} else {
 		
-		//-- rotate the player
-		transform.Rotate((Vector3.up * rotationSpeed) * Time.deltaTime);
-	}
+// 		//-- rotate the player
+// 		transform.Rotate((Vector3.up * rotationSpeed) * Time.deltaTime);
+// 	}
 
-}
+// }
 
-function Move(localmoving : boolean) {
-	//--called when the button is pressed or stopped pressing 
-	moving = localmoving; //--assign to public var
+// function Move(localmoving : boolean) {
+// 	//--called when the button is pressed or stopped pressing 
+// 	moving = localmoving; //--assign to public var
 	
-	if((localmoving == false) && (PlayerController.alive == true)) {
+// 	if((localmoving == false) && (PlayerController.alive == true)) {
 
-		//--switch spin direction
-		rotationSpeed = -rotationSpeed;
-	}
+// 		//--switch spin direction
+// 		rotationSpeed = -rotationSpeed;
+// 	}
 	
-	if(!PlayerController.hasMoved){
-		PlayerController.hasMoved = true;
+// 	if(!PlayerController.hasMoved){
+// 		PlayerController.hasMoved = true;
 
-		PlayerController.HideInstruction();
-	}
+// 		PlayerController.HideInstruction();
+// 	}
 
-}
+// }
