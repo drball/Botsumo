@@ -11467,6 +11467,53 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1001 &1523106090
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4209243009279766, guid: fade470f6f26347948c08d41928bbb4a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 458.63556
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209243009279766, guid: fade470f6f26347948c08d41928bbb4a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 192.87068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209243009279766, guid: fade470f6f26347948c08d41928bbb4a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209243009279766, guid: fade470f6f26347948c08d41928bbb4a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209243009279766, guid: fade470f6f26347948c08d41928bbb4a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209243009279766, guid: fade470f6f26347948c08d41928bbb4a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209243009279766, guid: fade470f6f26347948c08d41928bbb4a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4209243009279766, guid: fade470f6f26347948c08d41928bbb4a, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114260822863713592, guid: fade470f6f26347948c08d41928bbb4a,
+        type: 2}
+      propertyPath: currentLevel
+      value: main
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: fade470f6f26347948c08d41928bbb4a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1525310296
 GameObject:
   m_ObjectHideFlags: 0

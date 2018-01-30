@@ -36,11 +36,27 @@ public class PlayerAbilityScriptCS : MonoBehaviour {
 		}
 	}
 
-	public void ActivateAbility () {
+	public IEnumerator ActivateAbility () {
 
 		abilityActive = true;
-		Debug.Log("ability active");
+		Debug.Log("---------ability active");
 		BroadcastMessage("ActivateAbilityBroadcast");
+
+		Debug.Log("u0");
+
+		yield return new WaitForSeconds(1f);
+
+		Debug.Log("1");
+
+		yield return new WaitForSeconds(1f);
+
+		Debug.Log("2");
+
+		yield return new WaitForSeconds(1f);
+
+		Debug.Log("3");
+
+		yield return new WaitForSeconds(1f);
 		
 		//--pause player for a bit - whilst flashing
 		PlayerScript.alive = false;
@@ -52,6 +68,8 @@ public class PlayerAbilityScriptCS : MonoBehaviour {
 		
 		while(blinkingAmt < 8) {
 	        // yield WaitForSeconds(0.05);
+	        // yield return new WaitForSeconds(0.05f);
+	        Debug.Log("spafsdd");
 
 	        if(vfxObj.activeSelf == true){
 	        	vfxObj.SetActive(false);
@@ -65,6 +83,8 @@ public class PlayerAbilityScriptCS : MonoBehaviour {
 	    vfxObj.SetActive(true);
 	    
 	    PlayerScript.alive = true;
+
+	    yield return null;
 	}
 
 	public void DisableAbility() {

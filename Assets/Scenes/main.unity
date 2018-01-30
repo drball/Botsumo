@@ -2492,12 +2492,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013728812722, guid: 867eb7181d7f94806b04f346cc503b95,
     type: 2}
   m_PrefabInternal: {fileID: 1732543297}
---- !u!114 &647185852 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114195879826934522, guid: 8e9f4fb914c8349adbf63093566a004e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1385897780}
-  m_Script: {fileID: 11500000, guid: 881910ebe5cb54b1c9565e6a05052685, type: 3}
 --- !u!4 &659886421 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013728812722, guid: 867eb7181d7f94806b04f346cc503b95,
@@ -5529,46 +5523,6 @@ Prefab:
     - target: {fileID: 4000011031688492, guid: 8e9f4fb914c8349adbf63093566a004e, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000011774161784, guid: 8e9f4fb914c8349adbf63093566a004e,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 647185852}
-    - target: {fileID: 114000011774161784, guid: 8e9f4fb914c8349adbf63093566a004e,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MovePlayer1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000011774161784, guid: 8e9f4fb914c8349adbf63093566a004e,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 647185852}
-    - target: {fileID: 114000011774161784, guid: 8e9f4fb914c8349adbf63093566a004e,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MovePlayer1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013155347880, guid: 8e9f4fb914c8349adbf63093566a004e,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 647185852}
-    - target: {fileID: 114000013155347880, guid: 8e9f4fb914c8349adbf63093566a004e,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MovePlayer2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013155347880, guid: 8e9f4fb914c8349adbf63093566a004e,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 647185852}
-    - target: {fileID: 114000013155347880, guid: 8e9f4fb914c8349adbf63093566a004e,
-        type: 2}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: MovePlayer2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e9f4fb914c8349adbf63093566a004e, type: 2}

@@ -52,7 +52,7 @@ public class LevelSelectScript : MonoBehaviour {
 		HideUnlockModal();
 	}
 
-	void UnlockCurrentLevel(){
+	public void UnlockCurrentLevel(){
 		Debug.Log("unlock level "+levelSelectedToUnlock);
 
 		PlayerPrefs.SetInt(levelSelectedToUnlock+"Unlocked",1);

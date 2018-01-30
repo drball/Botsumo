@@ -13,32 +13,32 @@ public class LoadLevelBtn : MonoBehaviour {
 
 	void Awake () {
 
-		// VersionController = GameObject.Find("VersionController").GetComponent<VersionController>(); //--a singleton
+		VersionController = GameObject.Find("VersionController").GetComponent<VersionController>(); //--a singleton
 		LevelsController = GameObject.Find("LevelsController").GetComponent<LevelsControllerCS>(); //--a singleton
 		LevelSelectScript = GameObject.Find("GameController").GetComponent<LevelSelectScript>();
 	}
 
 	void CheckIfLocked (){
-		// if(VersionController.paidVersion == true)
-		// {
-		// 	unlocked = true;
-		// 	Debug.Log("this is the paid version - unlocked "+levelName);
+		if(VersionController.paidVersion == true)
+		{
+			unlocked = true;
+			Debug.Log("this is the paid version - unlocked "+levelName);
 
-		// } else {
-		// 	Debug.Log(levelName+" check if unlocked");
-		// 	//--now check if this particular level has been unlocked
-		// 	Debug.Log("level "+levelName+"unlocked = "+PlayerPrefs.GetInt(levelName+"Unlocked"));
-		// 	if(PlayerPrefs.GetInt(levelName+"Unlocked") == 1){
-		// 		unlocked = true;
-		// 		Debug.Log(levelName+" is unlocked");
-		// 	} else {
-		// 		Debug.Log(levelName+" is locked");
-		// 	}
-		// }
+		} else {
+			Debug.Log(levelName+" check if unlocked");
+			//--now check if this particular level has been unlocked
+			Debug.Log("level "+levelName+"unlocked = "+PlayerPrefs.GetInt(levelName+"Unlocked"));
+			if(PlayerPrefs.GetInt(levelName+"Unlocked") == 1){
+				unlocked = true;
+				Debug.Log(levelName+" is unlocked");
+			} else {
+				Debug.Log(levelName+" is locked");
+			}
+		}
 
-		// if( unlocked == true){
-		// 	UnlockButton();
-		// }
+		if( unlocked == true){
+			UnlockButton();
+		}
 	}
 
 	void UnlockButton (){

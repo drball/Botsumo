@@ -67,7 +67,8 @@ public class PickupScriptCS : MonoBehaviour {
 					
 				if(collidingPlayer != null)
 		        {   
-		            collidingPlayer.ActivateAbility();
+
+        			StartCoroutine(collidingPlayer.ActivateAbility());
 		        } else {
 		        	//--maybe we couldn't find the script because this player has a separate mesh collider
 		        	//--so look for script on its parent
@@ -76,7 +77,7 @@ public class PickupScriptCS : MonoBehaviour {
 		        	if(collidingPlayer != null)
 		        	{
 		    			Debug.Log("getting playerscript of cogplayer");
-		        		collidingPlayer.ActivateAbility();
+		        		StartCoroutine(collidingPlayer.ActivateAbility());
 		        	}
 		        }
 		    }

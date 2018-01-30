@@ -19,12 +19,12 @@ public class DetachableObject : MonoBehaviour {
 		Rigidbody otherRb = other.GetComponent<Rigidbody>();
         
 		if( otherRb ){
-			Debug.Log("speed of other "+otherRb.velocity.magnitude);
+			// Debug.Log(gameObject.name+"has hit "+other.name+"speed of other "+otherRb.velocity.magnitude);
 
 			float collisionMagnitude = otherRb.velocity.magnitude + rb.velocity.magnitude;
 
 			if(collisionMagnitude > 0.8f){
-				Debug.Log("collision "+collisionMagnitude+" was enough to detach");
+				Debug.Log(gameObject.name+"has hit "+other.name+". Collision "+collisionMagnitude+" was enough to detach");
 				Detach();
 			}
 		}

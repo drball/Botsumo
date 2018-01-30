@@ -38,7 +38,7 @@ public class BulletScript : MonoBehaviour {
 			coll.enabled = false;
 		
 			if (other.GetComponent<Rigidbody>()) {
-				Debug.Log("bullet apply force to "+other.name);
+				Debug.Log("bullet apply force of "+forceAmount+"to "+other.name);
 				// Apply force to the target object - calculate force
 				
 				if(other.tag == "Player") {

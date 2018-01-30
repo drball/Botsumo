@@ -26,7 +26,7 @@ public class GameControllerScriptCS : MonoBehaviour {
 	private LevelsControllerCS LevelsController; 
 
 
-	void Start () {
+	void Awake () {
 
 		LevelsController = GameObject.Find("LevelsController").GetComponent<LevelsControllerCS>();
 
@@ -102,7 +102,8 @@ public class GameControllerScriptCS : MonoBehaviour {
 			}
 		}
 		
-		Destroy(PlayerDummy);
+		Destroy(PlayerDummy,0);
+		Debug.Log("destroyed player dummy");
 		
 		//--load from "resources"
 		GameObject playerInstance = Instantiate(Resources.Load(playerToLoad, typeof(GameObject)),
@@ -120,33 +121,35 @@ public class GameControllerScriptCS : MonoBehaviour {
 
 		// Debug.Log("resetting scene -----------------------------------------");
 
-		// //--reset physics
-		// Player1.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-		// Player2.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+		//--reset physics
+		Player1.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+		Player2.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
 		
-		// Player1.GetComponent<Rigidbody>().velocity = Vector3.zero;
-		// Player2.GetComponent<Rigidbody>().velocity = Vector3.zero;
+		Player1.GetComponent<Rigidbody>().velocity = Vector3.zero;
+		Player2.GetComponent<Rigidbody>().velocity = Vector3.zero;
 		
 		
-		// //--reset position
-		// Player1.Respot();
-		// Player2.Respot();
+		//--reset position
+		Player1Script.Respot();
+		Player2Script.Respot();
 
-		// //--reset their local variables
-		// Player1.alive = true;
-		// Player2.alive = true;
+		//--reset their local variables
+		Player1Script.alive = true;
+		Player2Script.alive = true;
 		
-		// roundActive = true;
+		roundActive = true;
 
-		// //--send message to all scripts, including level-specific ones (like UnstablePlatform level)
-		// gameObject.SendMessage("ResetLevel",0);
+		//--send message to all scripts, including level-specific ones (like UnstablePlatform level)
+		gameObject.SendMessage("ResetLevel",0);
 
-		// // yield WaitForSeconds(1);
-		
-		// //--make sure these are hidden so we can activate them later
-		// ScoreModal.SetActive(false);
-		// PlayAgainBtn.SetActive(false);
+		// yield WaitForSeconds(1);
+		Invoke("HideScoreUI",2f);
+	}
 
+	void HideScoreUI(){
+		//--make sure these are hidden so we can activate them later
+		ScoreModal.SetActive(false);
+		PlayAgainBtn.SetActive(false);
 	}
 
 
@@ -254,9 +257,4 @@ public class GameControllerScriptCS : MonoBehaviour {
 			Player2Movement.Move(false);
 		}
 	}
-
-
-
 }
-
-

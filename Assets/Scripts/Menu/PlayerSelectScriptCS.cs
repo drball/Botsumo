@@ -69,15 +69,16 @@ public class PlayerSelectScriptCS : MonoBehaviour {
 		Debug.Log("solar unlocked = "+isSolarUnlocked);
 
 		if(GameObject.Find("LevelsController")){
-			Debug.Log("found levelscontroller1");
 			LevelsController = GameObject.Find("LevelsController").GetComponent<LevelsControllerCS>(); //--loading in menu. Persistant
-			Debug.Log("found levelscontroller2");
+			
+		}else {
+			Debug.Log("not found levelscontroller");
 		}
 		
 		if(GameObject.Find("VersionController")){
-			Debug.Log("found versioncontroller 1");
 			VersionController = GameObject.Find("VersionController").GetComponent<VersionController>();
-			Debug.Log("found versioncontroller 2");
+		} else {
+			Debug.Log("not found VersionController");
 		}
 
 		//--hide all the characters apart from the 1st
@@ -171,7 +172,7 @@ public class PlayerSelectScriptCS : MonoBehaviour {
 		}
 
 		// if(charToShow == 6){
-		// 	P1Btn.GetComponent.<Button>().interactable = false; //--this bots btn should be disabled
+		// 	P1Btn.GetComponent.<Button>().interactable = false; //--this bots btn should be disabled because it's a tease
 		// }
 	}
 
@@ -228,7 +229,7 @@ public class PlayerSelectScriptCS : MonoBehaviour {
 		}
 
 		// if(charToShow == 6){
-		// 	P2Btn.GetComponent.<Button>().interactable = false; //--this bots btn should be disabled
+		// 	P2Btn.GetComponent.<Button>().interactable = false; //--this bots btn should be disabled because it's a tease
 		// }
 	}
 
