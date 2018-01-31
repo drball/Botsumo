@@ -55,7 +55,7 @@ public class BtnScript_CS : MonoBehaviour
         // You can remove this feature if you wish of course.
         if (other.tag == "Player" || other.tag == "Box" && collision.impulse.magnitude > 10 && pressed == false)
         {
-            Debug.Log("a collision has happened between " + contact.thisCollider.name + " and " + other.name);
+            // Debug.Log("a collision has happened between " + contact.thisCollider.name + " and " + other.name);
 
             pressed = true;
 

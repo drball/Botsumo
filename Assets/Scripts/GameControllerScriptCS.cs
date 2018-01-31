@@ -142,8 +142,8 @@ public class GameControllerScriptCS : MonoBehaviour {
 		//--send message to all scripts, including level-specific ones (like UnstablePlatform level)
 		gameObject.SendMessage("ResetLevel",0);
 
-		// yield WaitForSeconds(1);
-		Invoke("HideScoreUI",2f);
+
+		Invoke("HideScoreUI",3f);
 	}
 
 	void HideScoreUI(){
@@ -152,15 +152,13 @@ public class GameControllerScriptCS : MonoBehaviour {
 		PlayAgainBtn.SetActive(false);
 	}
 
+	IEnumerator ShowScoreUI(){
 
-	public void EndRound() {
+		Debug.Log("ending round in 2");
+		yield return new WaitForSeconds(1.0f);
+		Debug.Log("ending round in 1");
+		yield return new WaitForSeconds(1.0f);
 
-		roundActive = false;
-		// Debug.Log("ending round in 2");
-		// yield WaitForSeconds(1);
-		// Debug.Log("ending round in 1");
-		// yield WaitForSeconds(1);
-		
 		//--show modal
 		ScoreModal.SetActive(true);
 		
@@ -174,12 +172,12 @@ public class GameControllerScriptCS : MonoBehaviour {
 		}
 		
 		//--update leaderboard after a few seconds
-		// yield WaitForSeconds(1.5);
+		yield return new WaitForSeconds(1.5f);
 		
 		Player1ScoreText.GetComponent<Text>().text = Player1Script.score.ToString();
 		Player2ScoreText.GetComponent<Text>().text = Player2Script.score.ToString();
 		
-		// yield WaitForSeconds(1.5);
+		yield return new WaitForSeconds(1.5f);
 		
 		if((Player1Script.score >= winningScore) || (Player2Script.score >= winningScore)){
 			//--someone has won
@@ -190,7 +188,7 @@ public class GameControllerScriptCS : MonoBehaviour {
 			PlayAgainBtn.SetActive(true);
 
 			//--show advert after a few seconds 
-			// yield WaitForSeconds(1);
+			yield return new WaitForSeconds(1.0f);
 
 			AdvertController.ShowAdvert();
 			
@@ -202,6 +200,15 @@ public class GameControllerScriptCS : MonoBehaviour {
 			
 			Reset();
 		}
+	}
+
+
+	public void EndRound() {
+
+		roundActive = false;
+
+		StartCoroutine(ShowScoreUI());
+		
 	}
 
 

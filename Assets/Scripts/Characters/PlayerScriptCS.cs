@@ -62,23 +62,29 @@ public class PlayerScriptCS : MonoBehaviour {
 		//--reset rotation
 		transform.rotation = startingRotation;
 		
-		//--make player blink for a bit
-		// var blinkingAmt : int = 0;
-		
-		// while(blinkingAmt < 8) {
-	 //        yield WaitForSeconds(0.06);
-	    
-		// 	if(vfxObj.activeSelf == true){
-	 //        	vfxObj.SetActive(false);
-	 //    	}else {
-	 //    		vfxObj.SetActive(true);
-	 //    	}
-	        
-	 //        blinkingAmt++;
-	 //    }
+		StartCoroutine(Blink());
 	    
 	    vfxObj.SetActive(true);
 		
+	}
+
+	IEnumerator Blink(){
+		//--make player blink for a bit
+	    int blinkingAmt = 0;
+		
+		while(blinkingAmt < 8) {
+	        yield return new WaitForSeconds(0.06f);
+
+	        if(vfxObj.activeSelf == true){
+	        	vfxObj.SetActive(false);
+	    	} else {
+	    		vfxObj.SetActive(true);
+	    	}
+	        
+	        blinkingAmt++;
+	    }
+	    
+	    vfxObj.SetActive(true);
 	}
 
 	void Timer(){

@@ -55,8 +55,8 @@ public class PickupScriptCS : MonoBehaviour {
 
 		    //--random chance of airstrike OR give player ability 
 		    var rand = Mathf.Floor(Random.Range(0, 22f)); //--make the 2nd number higher for less chance of airstrike
-		    Debug.Log("rand"+rand);
-		    if(rand <= 1){
+		    Debug.Log("rand "+rand);
+		    if(rand <= 1 && (false == true)){
 	    		//--it's airstrike 
 	    		Debug.Log("airstrike");
 	    		gameController.SendMessage("ActivateAirstrike");
@@ -67,8 +67,7 @@ public class PickupScriptCS : MonoBehaviour {
 					
 				if(collidingPlayer != null)
 		        {   
-
-        			StartCoroutine(collidingPlayer.ActivateAbility());
+        			collidingPlayer.ActivateAbility();
 		        } else {
 		        	//--maybe we couldn't find the script because this player has a separate mesh collider
 		        	//--so look for script on its parent
@@ -77,7 +76,7 @@ public class PickupScriptCS : MonoBehaviour {
 		        	if(collidingPlayer != null)
 		        	{
 		    			Debug.Log("getting playerscript of cogplayer");
-		        		StartCoroutine(collidingPlayer.ActivateAbility());
+		        		collidingPlayer.ActivateAbility();
 		        	}
 		        }
 		    }
