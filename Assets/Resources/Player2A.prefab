@@ -34,11 +34,11 @@ GameObject:
   - component: {fileID: 6576488}
   - component: {fileID: 11459720}
   - component: {fileID: 114000012598516724}
-  - component: {fileID: 114000013562666290}
   - component: {fileID: 114639118673658624}
   - component: {fileID: 114198077526241722}
   - component: {fileID: 114522695408252624}
   - component: {fileID: 114123371015753522}
+  - component: {fileID: 114846514339861082}
   m_Layer: 14
   m_Name: Player2A
   m_TagString: Player
@@ -576,19 +576,6 @@ MonoBehaviour:
   rotationSpeed: 0.5
   speed: 1
   moving: 0
---- !u!114 &114000013562666290
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aff1e9c4535d476c972bc1955562faf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shieldObj: {fileID: 1000010108205878}
-  shieldActive: 0
 --- !u!114 &114123371015753522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -670,6 +657,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdd129622fcf446eb8c1482a52b4e25e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114846514339861082
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b9a37c7bd8b4d168faa3e6c3e531c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldObj: {fileID: 1000010108205878}
+  shieldActive: 0
 --- !u!135 &135000012897527566
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -129,7 +129,6 @@ GameObject:
   - component: {fileID: 114385438844884000}
   - component: {fileID: 114766875355314950}
   - component: {fileID: 114801693937794972}
-  - component: {fileID: 114297170544837084}
   - component: {fileID: 65930243211312098}
   - component: {fileID: 65217595408627140}
   - component: {fileID: 65255286135938962}
@@ -141,6 +140,7 @@ GameObject:
   - component: {fileID: 114094586784329444}
   - component: {fileID: 114266905103239458}
   - component: {fileID: 114886470036835684}
+  - component: {fileID: 114317611598542488}
   m_Layer: 14
   m_Name: Player2Flat
   m_TagString: Player
@@ -645,19 +645,6 @@ MonoBehaviour:
   forceAmt: 0
   Spark: {fileID: 1000012417029784, guid: e38a1b71a399a4742967d148b4d6ed66, type: 2}
   CameraShake: {fileID: 0}
---- !u!114 &114297170544837084
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1876854574848072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aff1e9c4535d476c972bc1955562faf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shieldObj: {fileID: 1605700167825994}
-  shieldActive: 0
 --- !u!114 &114307768715578000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -672,6 +659,19 @@ MonoBehaviour:
   spinX: 0
   spinY: 0
   spinZ: -300
+--- !u!114 &114317611598542488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1876854574848072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b9a37c7bd8b4d168faa3e6c3e531c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldObj: {fileID: 1605700167825994}
+  shieldActive: 0
 --- !u!114 &114339560214084080
 MonoBehaviour:
   m_ObjectHideFlags: 1

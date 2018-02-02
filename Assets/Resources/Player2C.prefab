@@ -66,11 +66,11 @@ GameObject:
   - component: {fileID: 6546846}
   - component: {fileID: 11498750}
   - component: {fileID: 114000012318774850}
-  - component: {fileID: 114000012933209304}
   - component: {fileID: 114631098490132834}
   - component: {fileID: 114477117359564020}
   - component: {fileID: 114846426754970588}
   - component: {fileID: 114872089392823104}
+  - component: {fileID: 114482700273780324}
   m_Layer: 14
   m_Name: Player2C
   m_TagString: Player
@@ -576,19 +576,6 @@ MonoBehaviour:
   rotationSpeed: 0.5
   speed: 1
   moving: 0
---- !u!114 &114000012933209304
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 185858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aff1e9c4535d476c972bc1955562faf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shieldObj: {fileID: 1000010592529618}
-  shieldActive: 0
 --- !u!114 &114151473171887540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -618,6 +605,19 @@ MonoBehaviour:
   vfxObj: {fileID: 175170}
   playerNum: 2
   playerCharacter: C
+--- !u!114 &114482700273780324
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b9a37c7bd8b4d168faa3e6c3e531c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldObj: {fileID: 1000010592529618}
+  shieldActive: 0
 --- !u!114 &114560162316965048
 MonoBehaviour:
   m_ObjectHideFlags: 1

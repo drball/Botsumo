@@ -61,13 +61,13 @@ public class GameControllerScriptCS : MonoBehaviour {
 		if(LevelsController.singlePlayer) {
 			Debug.Log("this is single player mode");
 			Player2.GetComponent<PlayerMovementCS>().enabled = false;
-			// Player2.gameObject.Find("PlayerSeeker").SetActive(true); //--just disabling this 11:37
+			Player2.transform.Find("PlayerSeeker").gameObject.SetActive(true); 
 			RBtn.SetActive(false);
 			RInstruction.SetActive(false);
 
 		}else {
 			Debug.Log("disable playerseeker");
-			// Player2.gameObject.Find("PlayerSeeker").SetActive(false); //--just disabling this 11:46
+			Player2.transform.Find("PlayerSeeker").gameObject.SetActive(false);
 			RBtn.SetActive(true);
 		}
 
@@ -212,7 +212,7 @@ public class GameControllerScriptCS : MonoBehaviour {
 	}
 
 
-	void PlayAgain (){
+	public void PlayAgain (){
 
 		//--a full reset
 		Debug.Log("play again");

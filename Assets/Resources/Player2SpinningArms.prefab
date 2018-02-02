@@ -118,11 +118,11 @@ GameObject:
   - component: {fileID: 65000012177768896}
   - component: {fileID: 65000010330087344}
   - component: {fileID: 114000013071940136}
-  - component: {fileID: 114000011092210560}
   - component: {fileID: 114225139887148710}
   - component: {fileID: 114155623639807762}
   - component: {fileID: 114270398554001900}
   - component: {fileID: 114740367155857598}
+  - component: {fileID: 114002049770226696}
   m_Layer: 14
   m_Name: Player2SpinningArms
   m_TagString: Player
@@ -626,19 +626,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tickness: 1
   target: {x: 0, y: 0, z: 0}
---- !u!114 &114000011092210560
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012000915550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aff1e9c4535d476c972bc1955562faf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shieldObj: {fileID: 1000011363769082}
-  shieldActive: 0
 --- !u!114 &114000012700167888
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -711,6 +698,19 @@ MonoBehaviour:
   rotationSpeed: 1.8
   moveSpeed: 0.1
   obj: {fileID: 1000012000915550}
+--- !u!114 &114002049770226696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012000915550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b9a37c7bd8b4d168faa3e6c3e531c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldObj: {fileID: 1000011363769082}
+  shieldActive: 0
 --- !u!114 &114066874647538442
 MonoBehaviour:
   m_ObjectHideFlags: 1

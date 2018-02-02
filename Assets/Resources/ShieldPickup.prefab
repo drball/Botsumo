@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 13511926}
   - component: {fileID: 82000012616522674}
   - component: {fileID: 114000012636598416}
+  - component: {fileID: 114830475446439670}
   m_Layer: 0
   m_Name: ShieldPickup
   m_TagString: Untagged
@@ -3658,9 +3659,26 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162406}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a89a2a9fcec94583b6e2e137a146785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameController: {fileID: 0}
+  pickupsController: {fileID: 0}
+  isCollectable: 1
+  collectionSfx: {fileID: 0}
+  theParticle: {fileID: 164260}
+  vfxObj: {fileID: 1000010101542726}
+--- !u!114 &114830475446439670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 154c4f7bb62994b3f949a051e46d18d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   theParticle: {fileID: 164260}

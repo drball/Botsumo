@@ -47,7 +47,7 @@ public class BounceBackScript : MonoBehaviour {
 
 		GameObject other = contact.otherCollider.gameObject;
 
-		// Debug.Log("a collision has happened between "+contact.thisCollider.name +" and "+other.name);
+		Debug.Log("a collision has happened between "+contact.thisCollider.name +" and "+other.name);
 		
 		//--is the collider a sub-collider of the same object? 
 		if(transform.parent != null){

@@ -15,10 +15,19 @@ public class VersionController : MonoBehaviour {
 			Debug.Log("destroying this duplicate of LevelsController");
 			Destroy(gameObject);
 		}
+
+		//--check if we have bought the no-ads version
+		if(PlayerPrefs.GetInt("hasPaid") == 1){
+			paidVersion = true;
+		}
 	}
 
-	void SwitchToPaid(){
+	public void SwitchToPaid(){
 		//--button has been pressed and the payment has gone through
-
+		paidVersion = true;
+		//--save this 
+		PlayerPrefs.SetInt("hasPaid",1);
+		Debug.Log("set paid");
+		Application.LoadLevel("menu");
 	}
 }

@@ -56,7 +56,12 @@ public class SolarAbilityScript : MonoBehaviour {
 			Quaternion rotation = transform.rotation;
 
 			if(abilityActive){
-				rotation = Quaternion.LookRotation(new Vector3(target.transform.position.x, movingHead.transform.position.y, target.transform.position.z) - movingHead.transform.position);
+				rotation = Quaternion.LookRotation(
+					new Vector3(
+						target.transform.position.x, 
+						movingHead.transform.position.y, 
+						target.transform.position.z
+					) - movingHead.transform.position);
 			} 
 
  			movingHead.transform.rotation = Quaternion.Slerp(movingHead.transform.rotation, rotation, Time.deltaTime * 6f);

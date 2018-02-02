@@ -5,15 +5,15 @@ using UnityEngine;
 public class LevelSelectScript : MonoBehaviour {
 
 	public LevelsControllerCS LevelsController;
+	public VersionController VersionController;
 	public GameObject unlockModal; 
 	public string levelSelectedToUnlock; 
 	public GameObject[] levelButtons;
-	private VersionController VersionController;
 
 	// Use this for initialization
 	void Start () {
 		LevelsController = GameObject.Find("LevelsController").GetComponent<LevelsControllerCS>();
-		// VersionController = GameObject.Find("VersionController").GetComponent<VersionController>(); //--hide for now 16:00
+		VersionController = GameObject.Find("VersionController").GetComponent<VersionController>();
 		HideUnlockModal();
 
 		CheckIfLevelsUnlocked();
@@ -43,6 +43,11 @@ public class LevelSelectScript : MonoBehaviour {
 	public void DownloadPaidVersionBtn (){
 		Application.OpenURL("https://play.google.com/store/apps/details?id=com.DavidDickBall.BotSumoBattleArena");
 	}
+
+	public void RemoveAdsBtn (){
+		VersionController.SwitchToPaid();
+	}
+
 
 	public void UnlockLevelBtn (){
 		//--unlock button action

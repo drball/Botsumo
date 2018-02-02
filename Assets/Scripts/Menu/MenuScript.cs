@@ -8,22 +8,28 @@ public class MenuScript : MonoBehaviour {
 	public GameObject LogoFree; 
 	public GameObject LogoPaid; 
 	public GameObject MenuPopup;
+	public GameObject CreditsPopup;
+	public GameObject NoAdsPopup;
+	public GameObject MorePopup;
 	private VersionController VersionController;
+	private Purchaser PurchaserScript;
 
 	void Awake(){
 		VersionController = GameObject.Find("VersionController").GetComponent<VersionController>();
+		PurchaserScript = GameObject.Find("VersionController").GetComponent<Purchaser>();
 
-		// if(VersionController.paidVersion == true){
-		// 	LogoFree.SetActive(false);
-		// 	LogoPaid.SetActive(true);
-		// } else {
-		// 	LogoFree.SetActive(true);
-		// 	LogoPaid.SetActive(false);
-		// }
+		if(VersionController.paidVersion == true){
+			LogoFree.SetActive(false);
+			LogoPaid.SetActive(true);
+		} else {
+			LogoFree.SetActive(true);
+			LogoPaid.SetActive(false);
+		}
 	}
 
 	void Start(){
 		LoadingPanel.SetActive(false);
+		CloseAllPopups();
 
 		// var timesPlayed : int = PlayerPrefs.GetInt("timesPlayed");
 
@@ -33,12 +39,18 @@ public class MenuScript : MonoBehaviour {
 		// 	MenuPopup.SetActive(false);
 		// }
 	}
+
+	public void ShowPopup(GameObject thePopup){
+		//--show one popup and close all the others
+		CloseAllPopups();
+		thePopup.SetActive(true);
+
+	}
 	
 	public void StartGame() {
 		//--show loading panel because there's a delay
 		LoadingPanel.SetActive(true);
 
-		
 		Application.LoadLevel ("levelSelect");
 	}
 
@@ -52,6 +64,13 @@ public class MenuScript : MonoBehaviour {
 		}else {
 			Application.OpenURL("https://play.google.com/store/apps/details?id=com.DavidDickBall.RoboSumo");
 		}
+	}
+
+	public void CloseAllPopups(){
+		MenuPopup.SetActive(false);
+		NoAdsPopup.SetActive(false);
+		CreditsPopup.SetActive(false);
+		MorePopup.SetActive(false);
 	}
 
 	public void TwitterBtnPressed() {
@@ -72,6 +91,12 @@ public class MenuScript : MonoBehaviour {
 
 	public void ETSBtnPressed() {
 		Application.OpenURL("https://play.google.com/store/apps/details?id=com.DavidDickBall.EscapeTheSector");
+	}
+
+	public void NoAdsBtnPressed(){
+		//--do this here because the button can't find the versioncontroller
+		Debug.Log("no ads btn pressed");
+		PurchaserScript.BuyNonConsumable();
 	}
 }
 

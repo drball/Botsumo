@@ -14,9 +14,6 @@ public class CubeController : MonoBehaviour {
 	
 
 	public void CheckCubeAmt() {
-		
-
-		// yield return new WaitForSeconds(5);
 
 		//--check how many cubes are remaining
 		currentCubes = GameObject.FindGameObjectsWithTag("Box");

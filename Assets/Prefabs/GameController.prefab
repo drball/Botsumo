@@ -247,7 +247,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4000010653689674}
   - component: {fileID: 33000013781659108}
-  - component: {fileID: 54000013694936402}
   - component: {fileID: 65000010081053362}
   - component: {fileID: 65000011594996012}
   - component: {fileID: 65000011329445144}
@@ -602,7 +601,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4000014161117090}
   - component: {fileID: 33000010018468894}
-  - component: {fileID: 54000011605225454}
   - component: {fileID: 65000010595015172}
   - component: {fileID: 65000012571492338}
   - component: {fileID: 65000011171157880}
@@ -1661,36 +1659,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1677867822261724}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54000011605225454
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000014096835974}
-  serializedVersion: 2
-  m_Mass: 200
-  m_Drag: 2
-  m_AngularDrag: 0
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!54 &54000013694936402
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011562741348}
-  serializedVersion: 2
-  m_Mass: 200
-  m_Drag: 2
-  m_AngularDrag: 0
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &65000010081053362
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1699,7 +1667,7 @@ BoxCollider:
   m_GameObject: {fileID: 1000011562741348}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 2.1361926, y: 1.5033618, z: 1.6706883}
   m_Center: {x: -0.00012746394, y: 0.7393614, z: -0.252224}
@@ -1711,7 +1679,7 @@ BoxCollider:
   m_GameObject: {fileID: 1000011562741348}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.3138169, y: 2.5199332, z: 1.0650951}
   m_Center: {x: 0.00002087378, y: 1.2652138, z: -0.15158366}
@@ -1723,7 +1691,7 @@ BoxCollider:
   m_GameObject: {fileID: 1000014096835974}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 2.1361928, y: 1.4889649, z: 1.6706883}
   m_Center: {x: -0.000103270344, y: 0.7367962, z: -0.25221828}
@@ -1735,7 +1703,7 @@ BoxCollider:
   m_GameObject: {fileID: 1000014096835974}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.4662954, y: 0.8409205, z: 2.115808}
   m_Center: {x: 0.8211688, y: 1.2664367, z: 0.3744012}
@@ -1747,7 +1715,7 @@ BoxCollider:
   m_GameObject: {fileID: 1000011562741348}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.46629524, y: 0.81073296, z: 2.115808}
   m_Center: {x: 0.82115304, y: 1.2565706, z: 0.37441877}
@@ -1759,7 +1727,7 @@ BoxCollider:
   m_GameObject: {fileID: 1000011562741348}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.4195424, y: 0.8483331, z: 2.1180942}
   m_Center: {x: -0.85492903, y: 1.2702318, z: 0.3695988}
@@ -1771,7 +1739,7 @@ BoxCollider:
   m_GameObject: {fileID: 1000014096835974}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.41954234, y: 0.8469608, z: 2.1180937}
   m_Center: {x: -0.85492885, y: 1.2749969, z: 0.36959854}
@@ -1783,7 +1751,7 @@ BoxCollider:
   m_GameObject: {fileID: 1000014096835974}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1.313817, y: 2.1990879, z: 1.0650951}
   m_Center: {x: 0.0000430083, y: 1.4501929, z: -0.1515731}
@@ -2796,7 +2764,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114195879826934522}
         m_MethodName: PlayAgain
         m_Mode: 1
         m_Arguments:
@@ -3047,7 +3015,7 @@ MonoBehaviour:
   roundActive: 1
   Player1ScoreText: {fileID: 1000010789211254}
   Player2ScoreText: {fileID: 1000012052225358}
-  PlayAgainBtn: {fileID: 1000013833091876}
+  PlayAgainBtn: {fileID: 1000012018624086}
   SinglePlayer: 0
   RBtn: {fileID: 1000012364328538}
   RInstruction: {fileID: 1000012868205610}

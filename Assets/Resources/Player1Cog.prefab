@@ -62,12 +62,12 @@ GameObject:
   - component: {fileID: 65000010932437606}
   - component: {fileID: 65000013902735862}
   - component: {fileID: 114000011851928958}
-  - component: {fileID: 114000011428406650}
   - component: {fileID: 114460815102452632}
   - component: {fileID: 114571162164464612}
   - component: {fileID: 114173449844417240}
   - component: {fileID: 114750984374658438}
   - component: {fileID: 114298108541503184}
+  - component: {fileID: 114736837503001022}
   m_Layer: 8
   m_Name: Player1Cog
   m_TagString: Player
@@ -529,19 +529,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityActive: 0
   abilityCountDown: 5
---- !u!114 &114000011428406650
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011805834480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aff1e9c4535d476c972bc1955562faf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shieldObj: {fileID: 1000013228334584}
-  shieldActive: 0
 --- !u!114 &114000011851928958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -649,6 +636,19 @@ MonoBehaviour:
   forceAmt: 0
   Spark: {fileID: 1000012417029784, guid: e38a1b71a399a4742967d148b4d6ed66, type: 2}
   CameraShake: {fileID: 0}
+--- !u!114 &114736837503001022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011805834480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b9a37c7bd8b4d168faa3e6c3e531c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldObj: {fileID: 1000013228334584}
+  shieldActive: 0
 --- !u!114 &114750984374658438
 MonoBehaviour:
   m_ObjectHideFlags: 1

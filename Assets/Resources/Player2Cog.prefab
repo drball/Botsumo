@@ -107,17 +107,15 @@ GameObject:
   - component: {fileID: 4000010237384768}
   - component: {fileID: 33000011573418868}
   - component: {fileID: 54000012593121614}
-  - component: {fileID: 114000013857739256}
   - component: {fileID: 65000013639839648}
   - component: {fileID: 65000013082757448}
   - component: {fileID: 65000011126340482}
-  - component: {fileID: 114000013345741484}
-  - component: {fileID: 114000013909780304}
   - component: {fileID: 114652806869718198}
   - component: {fileID: 114854846342999864}
   - component: {fileID: 114001256885807722}
   - component: {fileID: 114491434112977480}
   - component: {fileID: 114497228162969338}
+  - component: {fileID: 114356210053577054}
   m_Layer: 14
   m_Name: Player2Cog
   m_TagString: Player
@@ -545,20 +543,6 @@ MonoBehaviour:
   rotationSpeed: 1.8
   moveSpeed: 0.1
   obj: {fileID: 1000012241113798}
---- !u!114 &114000013345741484
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012241113798}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b5dcd5399a649e1922388d70396e16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 0.5
-  speed: 1
-  moving: 0
 --- !u!114 &114000013745229060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -572,32 +556,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tickness: 1
   target: {x: 0, y: 0, z: 0}
---- !u!114 &114000013857739256
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012241113798}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d173f5862b21e2941a15e75a2c5220ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilityActive: 0
-  abilityCountDown: 5
---- !u!114 &114000013909780304
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012241113798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aff1e9c4535d476c972bc1955562faf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shieldObj: {fileID: 1000011299945264}
-  shieldActive: 0
 --- !u!114 &114001256885807722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -616,6 +574,19 @@ MonoBehaviour:
   vfxObj: {fileID: 1000010219909446}
   playerNum: 2
   playerCharacter: Cog
+--- !u!114 &114356210053577054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012241113798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b9a37c7bd8b4d168faa3e6c3e531c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldObj: {fileID: 1000011299945264}
+  shieldActive: 0
 --- !u!114 &114491434112977480
 MonoBehaviour:
   m_ObjectHideFlags: 1

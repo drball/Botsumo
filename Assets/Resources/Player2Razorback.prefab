@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4974037301338260}
   - component: {fileID: 114255159576834208}
   - component: {fileID: 114089259516278166}
-  - component: {fileID: 114601141290421426}
   - component: {fileID: 65271940951017364}
   - component: {fileID: 65776766228413832}
   - component: {fileID: 65196848525014680}
@@ -35,6 +34,7 @@ GameObject:
   - component: {fileID: 114389630195600192}
   - component: {fileID: 114792932280658282}
   - component: {fileID: 114324465871787164}
+  - component: {fileID: 114579645829365886}
   m_Layer: 14
   m_Name: Player2Razorback
   m_TagString: Player
@@ -632,7 +632,7 @@ MonoBehaviour:
   vfxObj: {fileID: 1539488087923904}
   playerNum: 2
   playerCharacter: Razorback
---- !u!114 &114601141290421426
+--- !u!114 &114579645829365886
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -640,7 +640,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1185592030564106}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aff1e9c4535d476c972bc1955562faf, type: 3}
+  m_Script: {fileID: 11500000, guid: f0b9a37c7bd8b4d168faa3e6c3e531c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shieldObj: {fileID: 1478351448372084}
