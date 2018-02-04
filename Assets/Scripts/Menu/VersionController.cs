@@ -5,6 +5,7 @@ using UnityEngine;
 public class VersionController : MonoBehaviour {
 
 	public bool paidVersion = false;
+	public Purchaser PurchaserScript;
 
 	void Awake () {
 
@@ -22,8 +23,15 @@ public class VersionController : MonoBehaviour {
 		}
 	}
 
+	public void PurchaseNoAds(){
+		//--IAP for no ads 
+		PurchaserScript.BuyNonConsumable();
+
+	}
+
 	public void SwitchToPaid(){
 		//--button has been pressed and the payment has gone through
+		//--called from the purchaser script
 		paidVersion = true;
 		//--save this 
 		PlayerPrefs.SetInt("hasPaid",1);

@@ -45,9 +45,8 @@ public class LevelSelectScript : MonoBehaviour {
 	}
 
 	public void RemoveAdsBtn (){
-		VersionController.SwitchToPaid();
+		VersionController.PurchaseNoAds();
 	}
-
 
 	public void UnlockLevelBtn (){
 		//--unlock button action

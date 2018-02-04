@@ -329,6 +329,10 @@ public class PlayerSelectScriptCS : MonoBehaviour {
 		// Debug.Log("----------Toggle is "+singlePlayerSelection);
 		LevelsController.singlePlayer = singlePlayerSelection;
 	}
+
+	public void RemoveAdsBtn (){
+		VersionController.PurchaseNoAds();
+	}
 	
 }
 

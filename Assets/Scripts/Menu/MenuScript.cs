@@ -12,11 +12,9 @@ public class MenuScript : MonoBehaviour {
 	public GameObject NoAdsPopup;
 	public GameObject MorePopup;
 	private VersionController VersionController;
-	private Purchaser PurchaserScript;
 
 	void Awake(){
 		VersionController = GameObject.Find("VersionController").GetComponent<VersionController>();
-		PurchaserScript = GameObject.Find("VersionController").GetComponent<Purchaser>();
 
 		if(VersionController.paidVersion == true){
 			LogoFree.SetActive(false);
@@ -96,7 +94,7 @@ public class MenuScript : MonoBehaviour {
 	public void NoAdsBtnPressed(){
 		//--do this here because the button can't find the versioncontroller
 		Debug.Log("no ads btn pressed");
-		PurchaserScript.BuyNonConsumable();
+		VersionController.PurchaseNoAds();
 	}
 }
 
