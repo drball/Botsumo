@@ -52,7 +52,7 @@ public class BounceBackScript : MonoBehaviour {
 		//--is the collider a sub-collider of the same object? 
 		if(transform.parent != null){
 			if(other.transform.name == transform.parent.name){
-				Debug.Log("collided with parent");
+				// Debug.Log("collided with parent");
 				return;
 			}
 		}
@@ -94,7 +94,7 @@ public class BounceBackScript : MonoBehaviour {
 					//--apply more force when hitting player
 					forceAmtLocal = forceAmt + 300;
 				} 
-				Debug.Log("---cog apply force of "+forceAmtLocal+" to "+other.name+" forceamt = "+forceAmt);
+				// Debug.Log("---cog apply force of "+forceAmtLocal+" to "+other.name+" forceamt = "+forceAmt);
 
 				otherRb.AddForce((directionToOther * forceAmtLocal), ForceMode.Impulse);
 				otherRb.AddTorque(transform.up * 450, ForceMode.Impulse);

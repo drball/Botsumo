@@ -14,7 +14,7 @@ public class UnstableLevel : MonoBehaviour {
 		InvokeRepeating("MakePlatformFall", 1, 0.4f);
 	}
 	
-	void ResetLevel (){
+	public void ResetLevel (){
 
 		Debug.Log("resetting the unstable level");
 

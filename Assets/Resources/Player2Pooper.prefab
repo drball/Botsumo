@@ -129,7 +129,6 @@ GameObject:
   - component: {fileID: 114578861687746160}
   - component: {fileID: 114231536961173876}
   - component: {fileID: 114029777794747970}
-  - component: {fileID: 114289881083638320}
   - component: {fileID: 114307988001116708}
   - component: {fileID: 65352904818267958}
   - component: {fileID: 65423366333472008}
@@ -138,6 +137,10 @@ GameObject:
   - component: {fileID: 65171136722391716}
   - component: {fileID: 65976371898309710}
   - component: {fileID: 95339817214760054}
+  - component: {fileID: 114655039074004778}
+  - component: {fileID: 114552322358174040}
+  - component: {fileID: 114212442848473386}
+  - component: {fileID: 114776313799708342}
   m_Layer: 14
   m_Name: Player2Pooper
   m_TagString: Player
@@ -694,13 +697,27 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1886629104414228}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8b5dcd5399a649e1922388d70396e16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 80
-  speed: 3
+  rotationSpeed: 0.5
+  speed: 1
+  moving: 0
+--- !u!114 &114212442848473386
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1886629104414228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b235ec4296ca24e41b6bfac55cf0dfa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 100
+  speed: 2.5
   moving: 0
 --- !u!114 &114231536961173876
 MonoBehaviour:
@@ -708,7 +725,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1886629104414228}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d173f5862b21e2941a15e75a2c5220ef, type: 3}
   m_Name: 
@@ -726,19 +743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdd129622fcf446eb8c1482a52b4e25e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114289881083638320
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1886629104414228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aff1e9c4535d476c972bc1955562faf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shieldObj: {fileID: 1173175796743962}
-  shieldActive: 0
 --- !u!114 &114307988001116708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -753,7 +757,7 @@ MonoBehaviour:
   BombEmitter: {fileID: 1346663790180690}
   Bomb: {fileID: 1002674782187832, guid: 5f576fc0b8a7243a3896efd3d5816e22, type: 2}
   anim: {fileID: 95339817214760054}
---- !u!114 &114578861687746160
+--- !u!114 &114552322358174040
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -761,7 +765,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 1886629104414228}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b819dcfcf1ea49dfa8beb81a24db61f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityActive: 0
+  abilityCountDown: 0
+--- !u!114 &114578861687746160
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1886629104414228}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9329beef74b08e44d9db212f85c3c412, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alive: 1
+  score: 0
+  hasMoved: 0
+  vfxObj: {fileID: 1963074270661386}
+  playerNum: 2
+  playerCharacter: Pooper
+--- !u!114 &114655039074004778
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1886629104414228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986a075d3596f44a9a633f75355d0815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   GameController: {fileID: 0}
@@ -771,6 +805,19 @@ MonoBehaviour:
   vfxObj: {fileID: 1963074270661386}
   playerNum: 2
   playerCharacter: Pooper
+--- !u!114 &114776313799708342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1886629104414228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b9a37c7bd8b4d168faa3e6c3e531c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldObj: {fileID: 1173175796743962}
+  shieldActive: 0
 --- !u!114 &114974319613824434
 MonoBehaviour:
   m_ObjectHideFlags: 1

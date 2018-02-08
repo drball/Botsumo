@@ -321,7 +321,6 @@ GameObject:
   - component: {fileID: 114042655921251280}
   - component: {fileID: 114329593827504608}
   - component: {fileID: 114710290513069316}
-  - component: {fileID: 114465695569950080}
   - component: {fileID: 65282220753073074}
   - component: {fileID: 65552135572206888}
   - component: {fileID: 65043129623610064}
@@ -332,6 +331,10 @@ GameObject:
   - component: {fileID: 65580925142923750}
   - component: {fileID: 65206106196329424}
   - component: {fileID: 65147957574188604}
+  - component: {fileID: 114916425167391216}
+  - component: {fileID: 114670992914293974}
+  - component: {fileID: 114080835413061124}
+  - component: {fileID: 114119446362164050}
   m_Layer: 8
   m_Name: Player2Dozer
   m_TagString: Player
@@ -2396,18 +2399,44 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1614091996780432}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9329beef74b08e44d9db212f85c3c412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameController: {fileID: 0}
   alive: 1
   score: 0
   hasMoved: 0
   vfxObj: {fileID: 1227155670824350}
   playerNum: 1
   playerCharacter: Flat
+--- !u!114 &114080835413061124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1614091996780432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b235ec4296ca24e41b6bfac55cf0dfa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 100
+  speed: 2.5
+  moving: 0
+--- !u!114 &114119446362164050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1614091996780432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b9a37c7bd8b4d168faa3e6c3e531c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldObj: {fileID: 1096645908304950}
+  shieldActive: 0
 --- !u!114 &114157818994648248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2429,7 +2458,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1614091996780432}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d173f5862b21e2941a15e75a2c5220ef, type: 3}
   m_Name: 
@@ -2450,19 +2479,6 @@ MonoBehaviour:
   spinX: 0
   spinY: 0
   spinZ: -300
---- !u!114 &114465695569950080
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1614091996780432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aff1e9c4535d476c972bc1955562faf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shieldObj: {fileID: 1096645908304950}
-  shieldActive: 0
 --- !u!114 &114594263498943914
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2474,7 +2490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee18cbed53a914b088c7fb7235a81725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114710290513069316
+--- !u!114 &114670992914293974
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2482,12 +2498,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 1614091996780432}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b819dcfcf1ea49dfa8beb81a24db61f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityActive: 0
+  abilityCountDown: 0
+--- !u!114 &114710290513069316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1614091996780432}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8b5dcd5399a649e1922388d70396e16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 80
-  speed: 3
+  rotationSpeed: 0.5
+  speed: 1
   moving: 0
+--- !u!114 &114916425167391216
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1614091996780432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986a075d3596f44a9a633f75355d0815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
+  alive: 1
+  score: 0
+  hasMoved: 0
+  vfxObj: {fileID: 1227155670824350}
+  playerNum: 2
+  playerCharacter: Dozer
 --- !u!135 &135704897742897042
 SphereCollider:
   m_ObjectHideFlags: 1

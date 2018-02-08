@@ -19,14 +19,14 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4636242752616424}
-  - component: {fileID: 114113614885415346}
-  - component: {fileID: 114783511013760792}
-  - component: {fileID: 114515946564247694}
-  - component: {fileID: 114099043644466436}
   - component: {fileID: 54162982174922390}
   - component: {fileID: 65061987362127276}
   - component: {fileID: 65933686713768996}
   - component: {fileID: 114388990141562984}
+  - component: {fileID: 114890533634664074}
+  - component: {fileID: 114137647571984546}
+  - component: {fileID: 114936812104480068}
+  - component: {fileID: 114422971164452422}
   m_Layer: 8
   m_Name: Player1Solar
   m_TagString: Player
@@ -392,7 +392,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114099043644466436
+--- !u!114 &114137647571984546
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -400,20 +400,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1101278084709898}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aff1e9c4535d476c972bc1955562faf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shieldObj: {fileID: 1667079951383970}
-  shieldActive: 0
---- !u!114 &114113614885415346
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1101278084709898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d173f5862b21e2941a15e75a2c5220ef, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b819dcfcf1ea49dfa8beb81a24db61f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   abilityActive: 0
@@ -434,7 +421,7 @@ MonoBehaviour:
   movingHead: {fileID: 1886572214891560}
   target: {fileID: 0}
   abilityActive: 0
---- !u!114 &114515946564247694
+--- !u!114 &114422971164452422
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -442,7 +429,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1101278084709898}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9329beef74b08e44d9db212f85c3c412, type: 3}
+  m_Script: {fileID: 11500000, guid: f0b9a37c7bd8b4d168faa3e6c3e531c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldObj: {fileID: 1667079951383970}
+  shieldActive: 0
+--- !u!114 &114890533634664074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1101278084709898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986a075d3596f44a9a633f75355d0815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   GameController: {fileID: 0}
@@ -452,7 +452,7 @@ MonoBehaviour:
   vfxObj: {fileID: 1780797547252048}
   playerNum: 1
   playerCharacter: Solar
---- !u!114 &114783511013760792
+--- !u!114 &114936812104480068
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -460,10 +460,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1101278084709898}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b5dcd5399a649e1922388d70396e16, type: 3}
+  m_Script: {fileID: 11500000, guid: b235ec4296ca24e41b6bfac55cf0dfa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 80
+  rotationSpeed: 100
   speed: 2.5
   moving: 0
 --- !u!135 &135248254856557338
