@@ -376,6 +376,7 @@ GameObject:
   - component: {fileID: 145159258}
   - component: {fileID: 145159257}
   - component: {fileID: 145159256}
+  - component: {fileID: 145159260}
   m_Layer: 5
   m_Name: No ads btn
   m_TagString: Untagged
@@ -514,6 +515,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 145159254}
+--- !u!114 &145159260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 145159254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe2a916cfab148508b2d21beb40e10c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &145315684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1503,6 +1515,7 @@ MonoBehaviour:
   CreditsPopup: {fileID: 334402904}
   NoAdsPopup: {fileID: 1965649972}
   MorePopup: {fileID: 1718619734}
+  NoAdsBtn: {fileID: 0}
 --- !u!1 &450681471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,7 +2106,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: UNLOCK NEW LEVELS BY WATCHING AN ADVERT, OR UPGRADE TO REMOVE ALL ADS
+  m_Text: 'REMOVE ALL ADS WILL:
+
+    UNLOCK ALL LEVELS
+
+    UNLOCK ALL BOTS
+
+    SUPPORT THE DEVEOPER'
 --- !u!222 &567199717
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6316,7 +6335,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1965649973
 RectTransform:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ For a collectable object which comes back later
 public class ShieldPickupScriptCS : MonoBehaviour {
 
 	private GameControllerScriptCS gameController;
-	private PickupsControllerCS pickupsController;
+	// private PickupsControllerCS pickupsController;
 	private bool isCollectable = true;
 	private AudioSource collectionSfx;
 	public GameObject theParticle;
@@ -20,7 +20,7 @@ public class ShieldPickupScriptCS : MonoBehaviour {
 		//--find gameController so we can call functions
 		gameController = GameObject.Find("GameController").GetComponent<GameControllerScriptCS>();
 		
-		pickupsController = GameObject.Find("GameController").GetComponent<PickupsControllerCS>();
+		// pickupsController = GameObject.Find("GameController").GetComponent<PickupsControllerCS>();
 		
 		collectionSfx = GetComponent<AudioSource>();
 

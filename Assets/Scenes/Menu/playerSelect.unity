@@ -332,7 +332,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &18620335
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4349,7 +4349,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.064, y: 0.38500002}
   m_AnchorMax: {x: 0.9418702, y: 0.802319}
-  m_AnchoredPosition: {x: -0.67502403, y: -0.015922546}
+  m_AnchoredPosition: {x: -0.67502403, y: -0.015930176}
   m_SizeDelta: {x: 1.6699982, y: 1.598011}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &584818688
@@ -7388,7 +7388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.048783556, y: 0.2045398}
   m_AnchorMax: {x: 0.20489179, y: 0.80200005}
-  m_AnchoredPosition: {x: -0.13423157, y: 0.100000024}
+  m_AnchoredPosition: {x: -0.13423157, y: 0.099999905}
   m_SizeDelta: {x: 0.26999998, y: -0.120000005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &979924254
@@ -8304,7 +8304,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07213423, y: 0.344}
   m_AnchorMax: {x: 0.17764932, y: 0.6935398}
-  m_AnchoredPosition: {x: 0.36576843, y: -0.20000005}
+  m_AnchoredPosition: {x: 0.36576843, y: -0.19999981}
   m_SizeDelta: {x: -0.7600002, y: -0.32999992}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1116078149
@@ -13109,7 +13109,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.064, y: 0.0918937}
   m_AnchorMax: {x: 0.5, y: 0.2941063}
-  m_AnchoredPosition: {x: -0.32434082, y: 2.0860748}
+  m_AnchoredPosition: {x: -0.32434082, y: 2.0860596}
   m_SizeDelta: {x: 3.7687683, y: -1.0800858}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1659784310
@@ -15555,7 +15555,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5202501, y: 0.0918937}
   m_AnchorMax: {x: 0.9418702, y: 0.2941063}
-  m_AnchoredPosition: {x: 0.103759766, y: 2.0861053}
+  m_AnchoredPosition: {x: 0.103759766, y: 2.0861206}
   m_SizeDelta: {x: -2.6760254, y: -1.053833}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1955279162
@@ -15598,8 +15598,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Play
+      - m_Target: {fileID: 1672222403}
+        m_MethodName: RemoveAdsBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -61,7 +61,7 @@ public class PickupScriptCS : MonoBehaviour {
 		    //--random chance of airstrike OR give player ability 
 		    var rand = Mathf.Floor(Random.Range(0, 22f)); //--make the 2nd number higher for less chance of airstrike
 		    Debug.Log("rand "+rand);
-		    if(rand <= 1 && (false == true)){
+		    if(rand <= 1){
 	    		//--it's airstrike 
 	    		Debug.Log("airstrike");
 	    		gameController.SendMessage("ActivateAirstrike");
