@@ -1515,7 +1515,6 @@ MonoBehaviour:
   CreditsPopup: {fileID: 334402904}
   NoAdsPopup: {fileID: 1965649972}
   MorePopup: {fileID: 1718619734}
-  NoAdsBtn: {fileID: 0}
 --- !u!1 &450681471
 GameObject:
   m_ObjectHideFlags: 0
@@ -7008,7 +7007,7 @@ GameObject:
   - component: {fileID: 2137467144}
   - component: {fileID: 2137467143}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Description text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
