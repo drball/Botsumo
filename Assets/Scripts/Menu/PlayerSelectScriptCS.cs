@@ -171,6 +171,10 @@ public class PlayerSelectScriptCS : MonoBehaviour {
 			UnlockP1Btn.SetActive(false);
 		}
 
+		if(charToShow == 9){
+			P1Btn.GetComponent<Button>().interactable = false; //--this bots btn should be disabled because it's a tease
+		}
+
 		// if(charToShow == 6){
 		// 	P1Btn.GetComponent.<Button>().interactable = false; //--this bots btn should be disabled because it's a tease
 		// }
@@ -226,6 +230,10 @@ public class PlayerSelectScriptCS : MonoBehaviour {
 
 		} else {
 			UnlockP2Btn.SetActive(false);
+		}
+
+		if(charToShow == 9){
+			P2Btn.GetComponent<Button>().interactable = false; //--this bots btn should be disabled because it's a tease
 		}
 
 		// if(charToShow == 6){
