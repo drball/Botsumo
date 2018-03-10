@@ -16,7 +16,9 @@ public class PlayerSelectScriptCS : MonoBehaviour {
 		"Solar",
 		"Razorback", 
 		"Pooper", 
-		"Flat"
+		"Flat",
+		"Boxer",
+		"Walle"
 	};
 
 	public GameObject[] p1GameObjects; //--array of characters
@@ -37,6 +39,8 @@ public class PlayerSelectScriptCS : MonoBehaviour {
 	public bool isRazorbackUnlocked;
 	public bool isPooperUnlocked;
 	public bool isFlatUnlocked;
+	public bool isBoxerUnlocked;
+	public bool isWalleUnlocked;
 
 	private int numPlayers = 2;
 	private int p1VisibleChar = 0;
@@ -65,6 +69,8 @@ public class PlayerSelectScriptCS : MonoBehaviour {
 		isRazorbackUnlocked = Convert.ToBoolean(PlayerPrefs.GetInt("UnlockedRazorback"));
 		isPooperUnlocked = Convert.ToBoolean(PlayerPrefs.GetInt("UnlockedPooper"));
 		isFlatUnlocked = Convert.ToBoolean(PlayerPrefs.GetInt("UnlockedFlat"));
+		isBoxerUnlocked = Convert.ToBoolean(PlayerPrefs.GetInt("UnlockedBoxer"));
+		isWalleUnlocked = Convert.ToBoolean(PlayerPrefs.GetInt("UnlockedWalle"));
 
 		Debug.Log("solar unlocked = "+isSolarUnlocked);
 
@@ -167,13 +173,20 @@ public class PlayerSelectScriptCS : MonoBehaviour {
 			UnlockP1Btn.SetActive(true);
 			UnlockP1BtnScript.selectedBot = "Flat";
 
+		} else if((charToShow == 9) && (!isBoxerUnlocked) && (VersionController.paidVersion == false)){
+			Debug.Log("p1 has selected boxer");
+			P1Btn.GetComponent<Button>().interactable = false; //--this bots btn should be disabled
+			//--show unlock button 
+			UnlockP1Btn.SetActive(true);
+			UnlockP1BtnScript.selectedBot = "Boxer";
+
 		} else {
 			UnlockP1Btn.SetActive(false);
 		}
 
-		if(charToShow == 9){
+		if(charToShow == 10){
 			P1Btn.GetComponent<Button>().interactable = false; //--this bots btn should be disabled because it's a tease
-		}
+		} 
 
 		// if(charToShow == 6){
 		// 	P1Btn.GetComponent.<Button>().interactable = false; //--this bots btn should be disabled because it's a tease
@@ -228,11 +241,18 @@ public class PlayerSelectScriptCS : MonoBehaviour {
 			UnlockP2Btn.SetActive(true);
 			UnlockP2BtnScript.selectedBot = "Flat";
 
+		} else if((charToShow == 9) && (!isBoxerUnlocked) && (VersionController.paidVersion == false)){
+			Debug.Log("p2 has selected boxer");
+			P2Btn.GetComponent<Button>().interactable = false; //--this bots btn should be disabled
+			//--show unlock button 
+			UnlockP2Btn.SetActive(true);
+			UnlockP2BtnScript.selectedBot = "Boxer";
+
 		} else {
 			UnlockP2Btn.SetActive(false);
 		}
 
-		if(charToShow == 9){
+		if(charToShow == 10){
 			P2Btn.GetComponent<Button>().interactable = false; //--this bots btn should be disabled because it's a tease
 		}
 
@@ -322,6 +342,10 @@ public class PlayerSelectScriptCS : MonoBehaviour {
 			isRazorbackUnlocked = true;
 		} else if (UnlockingBot == "Flat"){
 			isRazorbackUnlocked = true;
+		} else if (UnlockingBot == "Boxer"){
+			isBoxerUnlocked = true;
+		} else if (UnlockingBot == "Walle"){
+			isWalleUnlocked = true;
 		}
 
 		if (UnlockP1BtnScript.selectedBot == UnlockingBot){

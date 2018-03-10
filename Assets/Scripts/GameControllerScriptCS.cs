@@ -21,7 +21,7 @@ public class GameControllerScriptCS : MonoBehaviour {
 	private PlayerScriptCS Player2Script;
 
 	private int winningScore = 5;
-	private string defaultPlayer = "Cog"; //A B C Cog, SpinningArms, Solar
+	private string defaultPlayer = "Boxer"; //A B C Cog, SpinningArms, Solar
 	private AdvertControllerCS AdvertController;
 	private LevelsControllerCS LevelsController; 
 
@@ -98,7 +98,7 @@ public class GameControllerScriptCS : MonoBehaviour {
 			
 			//--for debug - if we load this scene without the player selection
 			if(playerNum == 1){
-				playerToLoad = "Player1Cog";
+				playerToLoad = "Player1Boxer";
 			}
 		}
 		

@@ -5285,11 +5285,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c63bca30a67421a489641e6604473825, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: c63bca30a67421a489641e6604473825, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: c63bca30a67421a489641e6604473825, type: 3}
       propertyPath: m_ScaleInLightmap

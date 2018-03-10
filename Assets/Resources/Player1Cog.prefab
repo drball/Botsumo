@@ -56,8 +56,6 @@ GameObject:
   - component: {fileID: 4000012541419194}
   - component: {fileID: 33000014290750092}
   - component: {fileID: 54000011764433184}
-  - component: {fileID: 114000012908620256}
-  - component: {fileID: 114000010090591612}
   - component: {fileID: 65000011875244726}
   - component: {fileID: 65000010932437606}
   - component: {fileID: 65000013902735862}
@@ -174,7 +172,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011805834480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.4770684, y: 2.2138948, z: 3.1044922}
+  m_LocalPosition: {x: 6.2220535, y: 1.9897281, z: 3.1044922}
   m_LocalScale: {x: 0.78132045, y: 0.7813205, z: 0.7813205}
   m_Children:
   - {fileID: 4000014096275516}
@@ -516,19 +514,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000010090591612
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011805834480}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d173f5862b21e2941a15e75a2c5220ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilityActive: 0
-  abilityCountDown: 5
 --- !u!114 &114000011851928958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -543,23 +528,6 @@ MonoBehaviour:
   rotationSpeed: 0.5
   speed: 1
   moving: 0
---- !u!114 &114000012908620256
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011805834480}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9329beef74b08e44d9db212f85c3c412, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alive: 1
-  score: 0
-  hasMoved: 0
-  vfxObj: {fileID: 1000013850133390}
-  playerNum: 1
-  playerCharacter: Cog
 --- !u!114 &114092321567996294
 MonoBehaviour:
   m_ObjectHideFlags: 1
