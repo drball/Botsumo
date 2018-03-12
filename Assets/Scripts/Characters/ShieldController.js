@@ -45,7 +45,7 @@ function DisableShield(){
 	var blinkingAmt : int = 0;
 	
 	while(blinkingAmt < 8) {
-		Debug.Log("blinkingAMt = "+blinkingAmt);
+		// Debug.Log("blinkingAMt = "+blinkingAmt);
         yield WaitForSeconds(0.04);
         shieldObj.GetComponent.<Renderer>().enabled = !shieldObj.GetComponent.<Renderer>().enabled;
         blinkingAmt++;

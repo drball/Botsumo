@@ -25,6 +25,12 @@ public class BounceBackScript : MonoBehaviour {
 		Debug.Log("change force amt = "+forceAmt+". cogspeed = "+cogSpeed);
 	}
 
+	public void IncreaseForceAmt (float factor){
+		//--called when boxer gets ability. Increase by a factor
+		forceAmt = forceAmt * factor;
+		Debug.Log("increase force amt. Force = "+forceAmt);
+	}
+
 	public void ResetForceAmt(){
 		// Debug.Log("reset forceamt");
 		forceAmt = forceAmtInitial;

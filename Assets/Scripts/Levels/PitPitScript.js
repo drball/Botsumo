@@ -30,7 +30,7 @@ function Update(){
 
 function DropPit(){
 
-	Debug.Log("start blinking");
+	// Debug.Log("start blinking");
 	//--make pit blink for a bit
 	var blinkingAmt : int = 0;
 	
