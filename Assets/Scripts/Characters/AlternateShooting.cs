@@ -9,13 +9,18 @@ public class AlternateShooting : MonoBehaviour {
 	public GameObject BulletEmitter1;
 	public GameObject BulletEmitter2;
 	public GameObject Bullet;
-	private bool fireFromL; //--alternates whether fire from L or R
-	private float fireRateNormal = 0.75f;
+	public GameObject EmitterContainer; //--to get rotation
+	private bool fireFromL = true; //--alternates whether fire from L or R
+	public float fireRateNormal = 0.75f; //--rate is actually interval (secs) between firing. Low = faster
 	private float fireRate;
 
 	// Use this for initialization
 	void Start () {
 		fireRate = fireRateNormal;
+
+		if(!EmitterContainer){
+			EmitterContainer = transform.gameObject;
+		}
 		
 	}
 	
@@ -32,17 +37,22 @@ public class AlternateShooting : MonoBehaviour {
 
 	void FireBullet() {
 
-		fireFromL = !fireFromL;
+		if(BulletEmitter2){
+			fireFromL = !fireFromL;
+		}
 		
 		Vector3 EmitterPos;
 		
 		if( fireFromL == true ){
 			EmitterPos = BulletEmitter1.transform.position;
+			Debug.Log("fir from L");
 		}else {
 			EmitterPos = BulletEmitter2.transform.position;
+			Debug.Log("fir from R");
 		}
 		
-		GameObject bulletInstance = Instantiate(Bullet, EmitterPos, transform.rotation);
+		GameObject bulletInstance = Instantiate(Bullet, EmitterPos, EmitterContainer.transform.rotation);
+		Debug.Log("------new bullet rot "+EmitterContainer.transform.rotation);
 		
 		//--set the owner of this bullet
 		// bulletInstance.GetComponent<BulletScript>().Owner = gameObject;

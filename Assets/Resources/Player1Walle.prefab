@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 90
-  speed: 2.5
+  speed: 2.2
   moving: 0
 --- !u!114 &114444926579736784
 MonoBehaviour:

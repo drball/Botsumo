@@ -6,7 +6,7 @@ public class SolarAbilityScript : MonoBehaviour {
 
 	public GameObject BulletEmitter;
 	public GameObject Bullet;
-	private float fireRateNormal = 0.75f;
+	private float fireRateNormal = 0.22f;
 	private float fireRate;
 	public GameObject movingHead;
 	public GameObject target;
@@ -23,7 +23,7 @@ public class SolarAbilityScript : MonoBehaviour {
 	// called by PlayerAbility using sendmessage
 	void ActivateAbilityBroadcast(){
 		Debug.Log("Activate yus!");
-		InvokeRepeating("FireLaser", 0, fireRate / 2f);
+		InvokeRepeating("FireLaser", 0, fireRate);
 		abilityActive = true;
 	}
 

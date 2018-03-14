@@ -10,15 +10,11 @@ GameObject:
   - component: {fileID: 400950}
   - component: {fileID: 3367454}
   - component: {fileID: 5422116}
-  - component: {fileID: 11401698}
   - component: {fileID: 114631353330800934}
   - component: {fileID: 6547836}
   - component: {fileID: 6593750}
   - component: {fileID: 6550708}
   - component: {fileID: 6504564}
-  - component: {fileID: 11483596}
-  - component: {fileID: 114000014138127498}
-  - component: {fileID: 114000011335373260}
   - component: {fileID: 114784882855478596}
   - component: {fileID: 114636067291958316}
   - component: {fileID: 114597990364745680}
@@ -71,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 154410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2734.5984, y: 416.82013, z: -5.022859}
+  m_LocalPosition: {x: 1.4321289, y: 1.0707762, z: 11.048588}
   m_LocalScale: {x: 0.62053096, y: 0.6205311, z: 0.620533}
   m_Children:
   - {fileID: 4612716348905874}
@@ -260,36 +256,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7260146, y: 0.80930465, z: 1.7238562}
   m_Center: {x: -1.0437918, y: 1.5709867, z: 0.24231416}
---- !u!114 &11401698
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 154410}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9329beef74b08e44d9db212f85c3c412, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alive: 1
-  score: 0
-  hasMoved: 0
-  vfxObj: {fileID: 1444425659567854}
-  playerNum: 1
-  playerCharacter: B
---- !u!114 &11483596
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 154410}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d173f5862b21e2941a15e75a2c5220ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilityActive: 0
-  abilityCountDown: 5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -548,33 +514,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114000011335373260
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 154410}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aff1e9c4535d476c972bc1955562faf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shieldObj: {fileID: 1000012161885086}
-  shieldActive: 0
---- !u!114 &114000014138127498
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 154410}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8b5dcd5399a649e1922388d70396e16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 0.5
-  speed: 1
-  moving: 0
 --- !u!114 &114356997175196538
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -54,3 +54,9 @@ TagManager:
   - name: Objects
     uniqueID: 842686241
     locked: 0
+  - name: Laser bg
+    uniqueID: 1066874865
+    locked: 0
+  - name: Laser front
+    uniqueID: 2837129913
+    locked: 0
