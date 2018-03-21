@@ -7,7 +7,7 @@ public class GameAnalytics : MonoBehaviour {
 
     public int timesPlayed;
 
-    void Start(){
+    void Awake(){
         timesPlayed = PlayerPrefs.GetInt("timesPlayed");
     }
 	
