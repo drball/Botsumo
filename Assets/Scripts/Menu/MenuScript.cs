@@ -58,9 +58,9 @@ public class MenuScript : MonoBehaviour {
 
 	public void RateBtnPressed() {
 		if(VersionController.paidVersion == true){
-			Application.OpenURL("https://play.google.com/store/apps/details?id=com.DavidDickBall.RoboSumo&referrer=utm_source%3Dinapp%26utm_medium%3Dlink%26utm_campaign%3Ddrb1");
+			Application.OpenURL("https://play.google.com/store/apps/details?id=com.DavidDickBall.RoboSumo&referrer=utm_source%3Dinapp%26utm_medium%3Dlink%26utm_campaign%3Dratebtn-paid");
 		}else {
-			Application.OpenURL("https://play.google.com/store/apps/details?id=com.DavidDickBall.RoboSumo&referrer=utm_source%3Dinapp%26utm_medium%3Dlink%26utm_campaign%3Ddrb1");
+			Application.OpenURL("https://play.google.com/store/apps/details?id=com.DavidDickBall.RoboSumo&referrer=utm_source%3Dinapp%26utm_medium%3Dlink%26utm_campaign%3Dratebtn");
 		}
 	}
 
@@ -80,15 +80,15 @@ public class MenuScript : MonoBehaviour {
 	}
 
 	public void BattleArenaBtnPressed() {
-		Application.OpenURL("https://play.google.com/store/apps/details?id=com.DavidDickBall.BotSumoBattleArena&referrer=utm_source%3Dinapp%26utm_medium%3Dlink%26utm_campaign%3Ddrb1");
+		Application.OpenURL("https://play.google.com/store/apps/details?id=com.DavidDickBall.BotSumoBattleArena&referrer=utm_source%3Dinapp%26utm_medium%3Dlink%26utm_campaign%3Dbotsumo");
 	}
 
 	public void FokkerBtnPressed() {
-		Application.OpenURL("https://play.google.com/store/apps/details?id=com.DavidDickBall.ChickenFokkers&referrer=utm_source%3Dinapp%26utm_medium%3Dlink%26utm_campaign%3Ddrb1");
+		Application.OpenURL("https://play.google.com/store/apps/details?id=com.DavidDickBall.ChickenFokkers&referrer=utm_source%3Dinapp%26utm_medium%3Dlink%26utm_campaign%3Dbotsumo");
 	}
 
 	public void ETSBtnPressed() {
-		Application.OpenURL("https://play.google.com/store/apps/details?id=com.DavidDickBall.EscapeTheSector&referrer=utm_source%3Dinapp%26utm_medium%3Dlink%26utm_campaign%3Ddrb1");
+		Application.OpenURL("https://play.google.com/store/apps/details?id=com.DavidDickBall.EscapeTheSector&referrer=utm_source%3Dinapp%26utm_medium%3Dlink%26utm_campaign%3Dbotsumo");
 	}
 
 	public void NoAdsBtnPressed(){
