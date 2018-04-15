@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.011377, y: 0.196558, z: 40.5826}
+  m_LocalPosition: {x: -41.173683, y: -28.17193, z: 40.5826}
   m_LocalScale: {x: 0.62053096, y: 0.6205311, z: 0.620533}
   m_Children:
   - {fileID: 4895696918118334}
@@ -691,6 +691,8 @@ MonoBehaviour:
   BulletEmitter1: {fileID: 184542}
   BulletEmitter2: {fileID: 120906}
   Bullet: {fileID: 123758, guid: f879073aff4e35040a73892b2fe60d54, type: 2}
+  EmitterContainer: {fileID: 0}
+  fireRateNormal: 0.75
 --- !u!114 &114608261742712044
 MonoBehaviour:
   m_ObjectHideFlags: 1

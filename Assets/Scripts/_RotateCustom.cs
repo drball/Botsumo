@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
+//--moves the AI player
+
 public class _RotateCustom : MonoBehaviour {
     // Here some variable we'll use
     public float rotationSpeed = 1.8f;

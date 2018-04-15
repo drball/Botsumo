@@ -180,17 +180,21 @@ public class PlayerSelectScriptCS : MonoBehaviour {
 			UnlockP1Btn.SetActive(true);
 			UnlockP1BtnScript.selectedBot = "Boxer";
 
+		} else if((charToShow == 10) && (!isWalleUnlocked) && (VersionController.paidVersion == false)){
+			Debug.Log("p1 has selected walle");
+			P1Btn.GetComponent<Button>().interactable = false; //--this bots btn should be disabled
+			//--show unlock button 
+			UnlockP1Btn.SetActive(true);
+			UnlockP1BtnScript.selectedBot = "Walle";
+
 		} else {
 			UnlockP1Btn.SetActive(false);
 		}
 
-		if(charToShow == 10){
-			P1Btn.GetComponent<Button>().interactable = false; //--this bots btn should be disabled because it's a tease
-		} 
+		// if(charToShow == 10){
+		// 	P1Btn.GetComponent<Button>().interactable = false; //--this bots btn should be disabled because it's a tease
+		// } 
 
-		// if(charToShow == 6){
-		// 	P1Btn.GetComponent.<Button>().interactable = false; //--this bots btn should be disabled because it's a tease
-		// }
 	}
 
 	void showOnlyP2Character (int charToShow) {
@@ -248,16 +252,19 @@ public class PlayerSelectScriptCS : MonoBehaviour {
 			UnlockP2Btn.SetActive(true);
 			UnlockP2BtnScript.selectedBot = "Boxer";
 
+		} else if((charToShow == 10) && (!isWalleUnlocked) && (VersionController.paidVersion == false)){
+			Debug.Log("p2 has selected walle");
+			P2Btn.GetComponent<Button>().interactable = false; //--this bots btn should be disabled
+			//--show unlock button 
+			UnlockP2Btn.SetActive(true);
+			UnlockP2BtnScript.selectedBot = "Walle";
+
 		} else {
 			UnlockP2Btn.SetActive(false);
 		}
 
-		if(charToShow == 10){
-			P2Btn.GetComponent<Button>().interactable = false; //--this bots btn should be disabled because it's a tease
-		}
-
-		// if(charToShow == 6){
-		// 	P2Btn.GetComponent.<Button>().interactable = false; //--this bots btn should be disabled because it's a tease
+		// if(charToShow == 10){
+		// 	P2Btn.GetComponent<Button>().interactable = false; //--this bots btn should be disabled because it's a tease
 		// }
 	}
 
